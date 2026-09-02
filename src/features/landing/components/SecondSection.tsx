@@ -1,12 +1,12 @@
 export function SecondSection() {
   return (
-    <section className="w-full max-w-[1294px] mx-auto px-6 mt-[72px] mb-[86px]">
+    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px]">
       <div className="flex flex-col md:flex-row gap-12 md:gap-16">
         {/* Left */}
         <div className="flex-1">
           <h2 className="text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.1] tracking-tight text-soma-black">
             Your school works hard. The system should work{" "}
-            <span className="font-bold italic text-[#CD432F]">harder.</span>
+            <span className="font-hand font-bold italic text-[#CD432F]">harder.</span>
           </h2>
         </div>
 
@@ -17,7 +17,7 @@ export function SecondSection() {
             lost records, delayed billing, and unclear communication between owners,
             staff, and parents.
           </p>
-          <p className="text-[28px] md:text-[32px] font-hand italic text-soma-blue leading-[1.3]">
+          <p className="text-[28px] md:text-[32px] font-hand font-bold italic text-soma-blue leading-[1.3]">
             Soma was designed to clear that noise.
           </p>
           <p className="text-[16px] md:text-[18px] font-normal leading-[1.7] text-soma-black/70">
