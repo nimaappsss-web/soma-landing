@@ -18,7 +18,7 @@ export default function Home() {
             To run.
           </p>
 
-          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7]">
+          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7] bg-white/5 md:bg-transparent rounded-[16px] px-4 py-3 md:p-0">
             SOMA brings the people, information and everyday work of your school
             together, so your team can spend less time chasing things and more time
             moving students forward.
@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">
             <Link
               href="#contact-sales"
-              className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white border border-white/25 rounded-full hover:bg-white/10 transition-colors"
+              className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white bg-soma-black border border-white/25 rounded-full hover:bg-soma-black/80 transition-colors"
             >
               Contact Sales
             </Link>
