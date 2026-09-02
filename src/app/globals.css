@@ -5,13 +5,17 @@
   --color-soma-black: #0D0D0D;
   --color-soma-black-light: #1A1A1A;
   --color-soma-gray: #8A8A8A;
+  --color-soma-red: #CD432F;
+  --color-gray-4: #32353E;
+  --color-soma-bg: #EDEDED;
+  --color-soma-white-card: #FAFAFA;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-hand: var(--font-caveat);
 }
 
 body {
-  background: #EDEDED;
+  background: var(--color-soma-bg);
   color: #0D0D0D;
 }
 

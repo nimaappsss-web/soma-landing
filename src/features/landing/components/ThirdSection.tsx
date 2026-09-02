@@ -6,33 +6,33 @@ export function ThirdSection() {
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px]">
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left card - taller */}
-        <div className="flex-[1.2] bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[440px]">
+        <div className="flex-[1.2] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
           <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-          <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
+          <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
             Know every student, clearly.
           </h3>
-          <p className="text-[16px] text-[#32353E] leading-[1.6] max-w-[406px]">
+          <p className="text-[16px] text-gray-4 leading-[1.6] max-w-[406px]">
             Keep student and guardian information organized in one secure place,
             with the right people getting access to the information they need.
           </p>
-          <div className="absolute bottom-0 right-0 w-[75%] h">
+          <div className="  right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4 bg">
             <Image
               src="/work1.png"
               alt="Students dashboard"
               width={500}
               height={320}
-              className="w-full h-auto rounded-tl-2xl object-cover object-top"
+              className="w-full h-full rounded-tl-2xl object-cover object-top border border-redState"
             />
           </div>
         </div>
-
+ 
         {/* Right card - shorter */}
-        <div className="flex-1 bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[380px]">
+        <div className="flex-1 bg-soma-white-card rounded-[30px] p-10 relative overflow-hidden min-h-[380px]">
           <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-          <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
+          <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
             Keep staff in the loop.
           </h3>
-          <p className="text-[16px] text-[#32353E] leading-[1.6] max-w-[406px]">
+          <p className="text-[16px] text-gray-4 leading-[1.6] max-w-[406px]">
             Connect teachers, admins, and staff with seamless communication
             tools that keep everyone on the same page.
           </p>
