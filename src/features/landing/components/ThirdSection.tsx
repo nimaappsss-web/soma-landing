@@ -6,7 +6,7 @@ export function ThirdSection() {
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px]">
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left card - taller */}
-        <div className="flex-[1.85] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
+        <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
           <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
             Know every student, clearly.
