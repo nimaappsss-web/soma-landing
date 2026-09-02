@@ -14,11 +14,11 @@ export default function Home() {
           <h1 className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-bold text-white text-center leading-[1.05] tracking-tight">
             Make school easier
           </h1>
-          <p className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-hand font-bold text-soma-blue text-center leading-[1.1] italic mt-1">
+          <p className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-hand font-bold text-soma-blue text-center leading-[1.1] italic mt-3 md:mt-4">
             To run.
           </p>
 
-          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-6 md:mt-8 leading-[1.7]">
+          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-4 md:mt-5 leading-[1.7]">
             SOMA brings the people, information and everyday work of your school
             together, so your team can spend less time chasing things and more time
             moving students forward.

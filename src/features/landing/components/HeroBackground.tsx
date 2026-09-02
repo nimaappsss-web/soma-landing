@@ -7,7 +7,7 @@ export function HeroBackground() {
         src="/somaLineBg.svg"
         alt=""
         fill
-        className="object-cover opacity-40"
+        className="object-cover opacity-60 md:opacity-40"
         priority
       />
     </div>
