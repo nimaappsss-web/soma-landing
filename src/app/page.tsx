@@ -3,6 +3,7 @@ import { Navbar } from "@/features/landing/components/Navbar";
 import { HeroImages } from "@/features/landing/components/HeroImages";
 import { HeroBackground } from "@/features/landing/components/HeroBackground";
 import { SecondSection } from "@/features/landing/components/SecondSection";
+import { ThirdSection } from "@/features/landing/components/ThirdSection";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       </div>
 
       <SecondSection />
+      <ThirdSection />
     </div>
   );
 }
