@@ -18,7 +18,7 @@ export default function Home() {
             To run.
           </p>
 
-          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7] bg-white/5 md:bg-transparent rounded-[16px] px-4 py-3 md:p-0">
+          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7] bg-soma-black md:bg-transparent rounded-[16px] px-4 py-3 md:p-0 relative z-10">
             SOMA brings the people, information and everyday work of your school
             together, so your team can spend less time chasing things and more time
             moving students forward.
