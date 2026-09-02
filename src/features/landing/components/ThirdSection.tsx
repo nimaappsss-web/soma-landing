@@ -15,19 +15,19 @@ export function ThirdSection() {
             Keep student and guardian information organized in one secure place,
             with the right people getting access to the information they need.
           </p>
-          <div className="  right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4 bg">
+          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4">
             <Image
               src="/work1.png"
               alt="Students dashboard"
-              width={500}
+              width={450}
               height={320}
-              className="w-full h-full rounded-tl-2xl object-cover object-top border border-redState"
+              className="w-full h-full rounded-tl-[30px] object-cover object-top-left border-t-10 border-l-10 border-soma-red "
             />
           </div>
         </div>
  
         {/* Right card - shorter */}
-        <div className="flex-1 bg-soma-white-card rounded-[30px] p-10 relative overflow-hidden min-h-[380px]">
+        <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
           <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
             Keep staff in the loop.
@@ -36,13 +36,13 @@ export function ThirdSection() {
             Connect teachers, admins, and staff with seamless communication
             tools that keep everyone on the same page.
           </p>
-          <div className="absolute bottom-0 right-0 w-[75%]">
+          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4">
             <Image
               src="/work2.png"
               alt="Staff management"
-              width={500}
-              height={280}
-              className="w-full h-auto rounded-tl-2xl object-cover object-top"
+              width={450}
+              height={320}
+              className="w-full h-full rounded-tl-[30px] object-cover object-top-left border-t-10 border-l-10 border-yellow-400"
             />
           </div>
         </div>
