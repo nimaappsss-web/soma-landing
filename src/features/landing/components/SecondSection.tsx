@@ -11,7 +11,7 @@ export function SecondSection() {
         </div>
 
         {/* Right */}
-        <div className="flex-1 max-w-none xl:max-w-[45%] flex flex-col gap-6">
+        <div className="flex-1 max-w-none 2xl:max-w-[456px] flex flex-col gap-6">
           <p className="text-[16px] md:text-[18px] font-normal leading-[1.7] text-[#32353E]">
             Modern school management is often defined by administrative noise, from
             lost records, delayed billing, and unclear communication between owners,
