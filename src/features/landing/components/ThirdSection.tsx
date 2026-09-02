@@ -7,7 +7,7 @@ export function ThirdSection() {
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left card - taller */}
         <div className="flex-[1.2] bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[440px]">
-          <Teacher className="w-8 h-8 text-soma-black mb-5" variant="Bold" />
+          <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
             Know every student, clearly.
           </h3>
@@ -15,7 +15,7 @@ export function ThirdSection() {
             Keep student and guardian information organized in one secure place,
             with the right people getting access to the information they need.
           </p>
-          <div className="absolute bottom-0 right-0 w-[75%]">
+          <div className="absolute bottom-0 right-0 w-[75%] h">
             <Image
               src="/work1.png"
               alt="Students dashboard"
@@ -28,7 +28,7 @@ export function ThirdSection() {
 
         {/* Right card - shorter */}
         <div className="flex-1 bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[380px]">
-          <People className="w-8 h-8 text-soma-black mb-5" variant="Bold" />
+          <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
             Keep staff in the loop.
           </h3>
