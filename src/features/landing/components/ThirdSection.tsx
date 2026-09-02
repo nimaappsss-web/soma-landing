@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GraduationCap, Users } from "lucide-react";
+import { GraduationCap, UserCurve } from "iconsax-react";
 
 export function ThirdSection() {
   return (
@@ -7,7 +7,7 @@ export function ThirdSection() {
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Left card - taller */}
         <div className="flex-[1.2] bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[440px]">
-          <GraduationCap className="w-8 h-8 text-soma-black mb-5" strokeWidth={2.5} />
+          <GraduationCap className="w-8 h-8 text-soma-black mb-5" variant="Bold" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
             Know every student, clearly.
           </h3>
@@ -28,7 +28,7 @@ export function ThirdSection() {
 
         {/* Right card - shorter */}
         <div className="flex-1 bg-[#FAFAFA] rounded-[30px] p-10 relative overflow-hidden min-h-[380px]">
-          <Users className="w-8 h-8 text-soma-black mb-5" strokeWidth={2.5} />
+          <UserCurve className="w-8 h-8 text-soma-black mb-5" variant="Bold" />
           <h3 className="text-[24px] font-semibold text-soma-black mb-3 leading-tight">
             Keep staff in the loop.
           </h3>
