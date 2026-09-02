@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    { "source": "/login", "destination": "https://app.checksoma.com/login$QS", "permanent": true },
+    { "source": "/onboarding", "destination": "https://app.checksoma.com/onboarding$QS", "permanent": true },
+    { "source": "/forgot-password", "destination": "https://app.checksoma.com/forgot-password$QS", "permanent": true },
+    { "source": "/reset-password", "destination": "https://app.checksoma.com/reset-password$QS", "permanent": true },
+    { "source": "/set-password", "destination": "https://app.checksoma.com/set-password$QS", "permanent": true },
+    { "source": "/complete-registration", "destination": "https://app.checksoma.com/complete-registration$QS", "permanent": true },
+    { "source": "/verify-teacher", "destination": "https://app.checksoma.com/verify-teacher$QS", "permanent": true },
+    { "source": "/register", "destination": "https://app.checksoma.com/register$QS", "permanent": true },
+    { "source": "/parent/setup", "destination": "https://app.checksoma.com/parent/setup$QS", "permanent": true },
+    { "source": "/accept-invite", "destination": "https://app.checksoma.com/accept-invite$QS", "permanent": true },
+    { "source": "/accept-parent-invite", "destination": "https://app.checksoma.com/accept-parent-invite$QS", "permanent": true },
+    { "source": "/continuous-assessment", "destination": "https://app.checksoma.com/continuous-assessment$QS", "permanent": true },
+    { "source": "/invite/:token", "destination": "https://app.checksoma.com/invite/:token$QS", "permanent": true },
+    { "source": "/staff", "destination": "https://app.checksoma.com/staff$QS", "permanent": true },
+    { "source": "/admin/:path*", "destination": "https://app.checksoma.com/admin/:path*$QS", "permanent": true },
+    { "source": "/teach/:path*", "destination": "https://app.checksoma.com/teach/:path*$QS", "permanent": true },
+    { "source": "/parent/:path*", "destination": "https://app.checksoma.com/parent/:path*$QS", "permanent": true },
+    { "source": "/staff/:path*", "destination": "https://app.checksoma.com/staff/:path*$QS", "permanent": true },
+    { "source": "/settings/:path*", "destination": "https://app.checksoma.com/settings/:path*$QS", "permanent": true }
+  ]
+}

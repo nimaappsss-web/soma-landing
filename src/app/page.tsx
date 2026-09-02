@@ -5,16 +5,16 @@ import { HeroBackground } from "@/features/landing/components/HeroBackground";
 
 export default function Home() {
   return (
-    <div className="h-screen h-screen-adaptive p-[10px]">
+    <div className="h-screen h-screen-adaptive min-h-[700px] p-[10px]">
       <div className="relative h-full min-h-[680px] bg-soma-black rounded-[30px] overflow-hidden flex flex-col">
         <HeroBackground />
         <Navbar />
 
-        <main className="relative z-10 w-full max-w-[1294px] mx-auto flex flex-col items-center px-6 pt-16 md:pt-20 min-h-[600px] flex-1">
-          <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-bold text-white text-center leading-[1.05] tracking-tight">
+        <main className="relative z-10 w-full max-w-[1294px] mx-auto flex flex-col items-center px-6 pt-8 md:pt-12 lg:pt-16 flex-1">
+          <h1 className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-bold text-white text-center leading-[1.05] tracking-tight">
             Make school easier
           </h1>
-          <p className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[80px] font-hand font-bold text-soma-blue text-center leading-[1.1] italic mt-1">
+          <p className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-hand font-bold text-soma-blue text-center leading-[1.1] italic mt-1">
             To run.
           </p>
 
