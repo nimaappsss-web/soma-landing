@@ -5,8 +5,8 @@ import { HeroBackground } from "@/features/landing/components/HeroBackground";
 
 export default function Home() {
   return (
-    <div className="min-h-[700px] md:h-screen p-[10px]">
-      <div className="relative min-h-[680px] md:h-full bg-soma-black rounded-[30px] overflow-hidden flex flex-col">
+    <div className="h-screen min-h-[700px] p-[10px]">
+      <div className="relative h-full min-h-[680px] bg-soma-black rounded-[30px] overflow-hidden flex flex-col">
         <HeroBackground />
         <Navbar />
 
