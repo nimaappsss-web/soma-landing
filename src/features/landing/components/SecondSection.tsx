@@ -3,7 +3,7 @@ export function SecondSection() {
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px]">
       <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-16">
         {/* Left */}
-        <div className="flex-1">
+        <div className="flex-1 max-w-[545px]">
           <h2 className="text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.1] tracking-tight text-soma-black">
             Your school works hard. The system should work{" "}
             <span className="font-hand font-bold italic text-soma-red">harder.</span>
