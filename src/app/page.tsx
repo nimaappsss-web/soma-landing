@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Navbar } from "@/features/landing/components/Navbar";
 import { HeroImages } from "@/features/landing/components/HeroImages";
 import { HeroBackground } from "@/features/landing/components/HeroBackground";
+import { SecondSection } from "@/features/landing/components/SecondSection";
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
 
         <HeroImages />
       </div>
+
+      <SecondSection />
     </div>
   );
 }
