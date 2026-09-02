@@ -21,13 +21,13 @@ export function Navbar() {
       </div>
 
         <div className="flex items-center gap-6">
-          <a href="#login" className="text-sm font-semibold text-white hover:text-white/80 transition-colors">
-            Login
-          </a>
-          <a
-            href="#get-started"
-            className="px-6 py-3 text-sm font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
-          >
+        <a href="https://checksoma.com/login" className="text-sm font-semibold text-white hover:text-white/80 transition-colors">
+          Login
+        </a>
+        <a
+          href="https://checksoma.com/onboarding"
+          className="px-6 py-3 text-sm font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
+        >
             Get Started
           </a>
         </div>
