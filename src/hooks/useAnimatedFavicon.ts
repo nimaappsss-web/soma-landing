@@ -17,13 +17,15 @@ export const useAnimatedFavicon = (frames: string[], schedule: number[]) => {
     let cancelled = false;
 
     const setIcon = (href: string) => {
-      document
-        .querySelectorAll("link[rel~='icon']")
-        .forEach((el) => el.remove());
-      const link = document.createElement("link");
-      link.rel = "icon";
-      link.href = href;
-      document.head.appendChild(link);
+      const existing = document.querySelector("link[rel~='icon']");
+      if (existing) {
+        existing.setAttribute("href", href);
+      } else {
+        const link = document.createElement("link");
+        link.rel = "icon";
+        link.href = href;
+        document.head.appendChild(link);
+      }
     };
 
     const tick = () => {
