@@ -26,14 +26,14 @@ export function HeroImages() {
       />
 
       {/* Stat card - Students Enrolled */}
-      <div className="absolute left-[80px] sm:left-[160px] lg:left-[200px] top-[10px] bg-white w-[100px] sm:w-[115px] lg:w-[131.25px] rounded-[8px] sm:rounded-[11.25px] px-[8px] sm:px-[10px] lg:px-[11.5px] py-[10px] sm:py-[12px] lg:py-[13.5px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] z-10">
+      <div className="absolute left-[80px] sm:left-[160px] lg:left-[200px] top-[40px] sm:top-[50px] lg:top-[60px] bg-white w-[100px] sm:w-[115px] lg:w-[131.25px] rounded-[8px] sm:rounded-[11.25px] pl-[11.5px] pr-[11.5px] pt-[8px] pb-[13.5px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] z-10">
         <span className="inline-block h-[14px] lg:h-[16.79px] leading-[14px] lg:leading-[16.79px] px-2 lg:px-3 text-[5px] lg:text-[6.75px] font-bold text-soma-blue bg-soma-blue/10 rounded-[749.25px] uppercase tracking-wider">Today</span>
         <p className="text-[16px] lg:text-[21px] font-semibold text-soma-black leading-tight mt-1 lg:mt-2">1,240</p>
         <p className="text-[6px] lg:text-[7.5px] text-[#9098AC] mt-0.5 lg:mt-1">Students Enrolled</p>
       </div>
 
       {/* Stat card - Academics */}
-      <div className="absolute right-[60px] sm:right-[120px] lg:right-[160px] bottom-[60px] lg:bottom-[80px] bg-white w-[100px] sm:w-[115px] lg:w-[131.25px] rounded-[8px] sm:rounded-[11.25px] px-[8px] sm:px-[10px] lg:px-[11.5px] py-[10px] sm:py-[12px] lg:py-[13.5px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] z-10">
+      <div className="absolute right-[60px] sm:right-[120px] lg:right-[160px] bottom-[60px] lg:bottom-[80px] bg-white w-[100px] sm:w-[115px] lg:w-[131.25px] rounded-[8px] sm:rounded-[11.25px] pl-[11.5px] pr-[11.5px] pt-[8px] pb-[13.5px] shadow-[0_8px_30px_rgba(0,0,0,0.08)] z-10">
         <span className="inline-block h-[14px] lg:h-[16.79px] leading-[14px] lg:leading-[16.79px] px-2 lg:px-3 text-[5px] lg:text-[6.75px] font-bold text-soma-blue bg-soma-blue/10 rounded-[749.25px] uppercase tracking-wider">Academics</span>
         <p className="text-[12px] lg:text-[16px] font-semibold text-soma-black mt-1 lg:mt-2">SS 2 Science</p>
         <p className="text-[6px] lg:text-[7.5px] text-[#9098AC] mt-0.5 lg:mt-1">94% Results Ready</p>
