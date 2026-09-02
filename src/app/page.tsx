@@ -10,7 +10,7 @@ export default function Home() {
         <HeroBackground />
         <Navbar />
 
-        <main className="relative z-10 w-full max-w-[1294px] mx-auto flex flex-col items-center px-6 pt-8 md:pt-12 lg:pt-16 flex-1">
+        <main className="relative z-10 w-full max-w-[1294px] mx-auto flex flex-col items-center px-6 pt-16 md:pt-20 flex-1">
           <h1 className="text-[32px] sm:text-[44px] md:text-[60px] lg:text-[80px] font-bold text-white text-center leading-[1.05] tracking-tight">
             Make school easier
           </h1>
@@ -18,13 +18,13 @@ export default function Home() {
             To run.
           </p>
 
-          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-4 md:mt-5 leading-[1.7]">
+          <p className="max-w-[484px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7]">
             SOMA brings the people, information and everyday work of your school
             together, so your team can spend less time chasing things and more time
             moving students forward.
           </p>
 
-          <div className="flex items-center justify-center gap-3 md:gap-4 mt-8 md:mt-10">
+          <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">
             <Link
               href="#contact-sales"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white border border-white/25 rounded-full hover:bg-white/10 transition-colors"
