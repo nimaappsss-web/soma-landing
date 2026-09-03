@@ -155,20 +155,20 @@ export function FourthSection() {
   return (
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
       {/* Header */}
-      <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-16 mb-10 md:mb-14">
+      <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-16 mb-8 md:mb-14">
         <div>
-          <p className="text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
+          <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-4 md:mb-5">
             The SOMA Advantage
           </p>
-          <h2 className="text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black">
+          <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black">
             Less paperwork.
           </h2>
-          <p className="text-[40px] md:text-[52px] lg:text-[66px] font-hand font-bold text-soma-blue leading-[1.1] italic">
+          <p className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-hand font-bold text-soma-blue leading-[1.1] italic">
             More school.
           </p>
         </div>
         <div className="md:pt-14">
-          <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] max-w-[400px]">
+          <p className="text-[14px] md:text-[16px] lg:text-[18px] text-gray-4 leading-[1.7] max-w-[400px]">
             Everything your school needs to manage academics, tuition, staff,
             students and parents in one application.
           </p>
@@ -178,7 +178,7 @@ export function FourthSection() {
       {/* Tabs */}
       <div
         ref={trackRef}
-        className="relative flex flex-wrap gap-2 bg-white rounded-full p-1.5 w-fit mb-12 md:mb-16"
+        className="relative flex flex-wrap gap-1.5 md:gap-2 bg-white rounded-full p-1.5 w-fit mb-8 md:mb-16"
       >
         {/* Sliding indicator */}
         <div
@@ -192,7 +192,7 @@ export function FourthSection() {
               if (el) tabRefs.current.set(tab.id, el);
             }}
             onClick={() => setActiveTab(tab.id)}
-            className="relative z-10 px-5 py-2.5 rounded-full text-[14px] font-medium transition-colors duration-300"
+            className="relative z-10 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-[12px] md:text-[14px] font-medium transition-colors duration-300"
             style={{
               color: activeTab === tab.id ? "#FFFFFF" : undefined,
             }}
@@ -203,25 +203,25 @@ export function FourthSection() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
         {/* Left */}
         <div className="flex-1">
-          <h3 className="text-[28px] md:text-[32px] font-semibold text-soma-black leading-tight mb-5">
+          <h3 className="text-[22px] sm:text-[28px] md:text-[32px] font-semibold text-soma-black leading-tight mb-4 md:mb-5">
             {activeContent.title}
           </h3>
-          <p className="text-[16px] text-gray-4 leading-[1.7] mb-8">
+          <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.7] mb-6 md:mb-8">
             {activeContent.description}
           </p>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-5 md:gap-6">
             {activeContent.bullets.map((bullet, i) => (
-              <div key={i} className="flex gap-4 items-start">
+              <div key={i} className="flex gap-3 md:gap-4 items-start">
                 <TickCircle
                   variant="Bold"
-                  size={28}
+                  size={24}
                   color="#0D0D0D"
                   className="mt-0.5 shrink-0"
                 />
-                <p className="text-[16px] text-soma-black leading-[1.6]">
+                <p className="text-[14px] md:text-[16px] text-soma-black leading-[1.6]">
                   {bullet}
                 </p>
               </div>
@@ -230,8 +230,8 @@ export function FourthSection() {
         </div>
 
         {/* Right - Image */}
-        <div className="flex-1 relative">
-          <div className="rounded-[24px] overflow-hidden">
+        <div className="flex-1 relative w-full">
+          <div className="rounded-[20px] md:rounded-[24px] overflow-hidden">
             <Image
               src={activeContent.image}
               alt={activeContent.label}
@@ -246,22 +246,22 @@ export function FourthSection() {
             return (
               <div
                 key={i}
-                className={`absolute bg-white rounded-[23px] px-4 py-3 flex items-center gap-3 shadow-lg ${
+                className={`absolute bg-white rounded-[23px] px-3 md:px-4 py-2.5 md:py-3 flex items-center gap-2.5 md:gap-3 shadow-lg ${
                   i === 0
-                    ? "bottom-20 -left-4 md:-left-8"
-                    : "top-1/3 -right-2 md:-right-6"
+                    ? "bottom-12 md:bottom-20 -left-2 md:-left-8"
+                    : "top-1/3 -right-1 md:-right-6"
                 }`}
               >
                 <div
-                  className={`flex items-center justify-center w-10 h-10 rounded-xl ${iconBg}`}
+                  className={`flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl ${iconBg}`}
                 >
-                  <Icon variant="Bold" size={20} color={iconColor} />
+                  <Icon variant="Bold" size={18} color={iconColor} />
                 </div>
                 <div>
-                  <p className="text-[14px] font-semibold text-soma-black leading-tight">
+                  <p className="text-[12px] md:text-[14px] font-semibold text-soma-black leading-tight">
                     {title}
                   </p>
-                  <p className="text-[12px] text-gray-4 leading-tight">
+                  <p className="text-[10px] md:text-[12px] text-gray-4 leading-tight">
                     {description}
                   </p>
                 </div>
