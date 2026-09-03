@@ -18,15 +18,17 @@ export function ThirdSection() {
                 with the right people getting access to the information they need.
               </p>
             </div>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 flex-1 overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px] h-full">
-                <Image
-                  src="/work1.png"
-                  alt="Students dashboard"
-                  width={700}
-                  height={520}
-                  className="h-full w-full rounded-tl-[30px] object-cover object-top-left"
-                />
+            <div className="pl-4 md:pl-0 mt-10">
+              <div className="bg-soma-bg rounded-tl-[30px] flex-1 overflow-hidden pt-4">
+                <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px] h-full">
+                  <Image
+                    src="/work1.png"
+                    alt="Students dashboard"
+                    width={700}
+                    height={520}
+                    className="h-full w-full rounded-tl-[30px] object-cover object-top-left"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -43,15 +45,17 @@ export function ThirdSection() {
                 tools that keep everyone on the same page.
               </p>
             </div>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 flex-1 overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px] h-full">
-                <Image
-                  src="/work2.png"
-                  alt="Staff management"
-                  width={700}
-                  height={520}
-                  className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
-                />
+            <div className="pl-4 md:pl-0 mt-10 flex-1">
+              <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pt-4">
+                <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px] h-full">
+                  <Image
+                    src="/work2.png"
+                    alt="Staff management"
+                    width={700}
+                    height={520}
+                    className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -70,15 +74,17 @@ export function ThirdSection() {
                 clearer picture of what&apos;s happening across classes.
               </p>
             </div>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 aspect-[4/3] overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-soma-green bg-white rounded-tl-[30px] h-full">
-                <Image
-                  src="/work3.png"
-                  alt="Attendance"
-                  width={700}
-                  height={520}
-                  className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
-                />
+            <div className="pl-4 md:pl-0 mt-10">
+              <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pt-4">
+                <div className="border-t-10 border-l-10 border-soma-green bg-white rounded-tl-[30px] h-full">
+                  <Image
+                    src="/work3.png"
+                    alt="Attendance"
+                    width={700}
+                    height={520}
+                    className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -95,15 +101,17 @@ export function ThirdSection() {
                 gets lost in translation.
               </p>
             </div>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 aspect-[4/3] overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
-                <Image
-                  src="/work4.png"
-                  alt="Communication"
-                  width={700}
-                  height={520}
-                  className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
-                />
+            <div className="pl-4 md:pl-0 mt-10">
+              <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pt-4">
+                <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
+                  <Image
+                    src="/work4.png"
+                    alt="Communication"
+                    width={700}
+                    height={520}
+                    className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
+                  />
+                </div>
               </div>
             </div>
           </div>
