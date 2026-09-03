@@ -3,7 +3,7 @@ import { Teacher, People, Clipboard, PresentionChart } from "iconsax-react";
 
 export function ThirdSection() {
   return (
-    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-6 md:px-[62px]">
+    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left card - taller */}
