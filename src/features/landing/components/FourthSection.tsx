@@ -153,7 +153,7 @@ export function FourthSection() {
   }, [activeTab]);
 
   return (
-    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
+    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px] overflow-hidden">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-16 mb-8 md:mb-14">
         <div>
