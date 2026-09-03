@@ -5,7 +5,8 @@ const cards = [
   {
     image: "/made1.webp",
     label: "LEADERSHIP",
-    labelColor: "text-yellow-500",
+    labelBg: "bg-yellow-500",
+    labelColor: "text-soma-black",
     title: "Run",
     description:
       "See the school clearly. Make decisions with current information.",
@@ -13,7 +14,8 @@ const cards = [
   {
     image: "/made2.webp",
     label: "TEACHERS",
-    labelColor: "text-soma-blue",
+    labelBg: "bg-soma-green",
+    labelColor: "text-soma-black",
     title: "Teach",
     description:
       "Spend less time on admin. Keep classes and learning moving.",
@@ -21,7 +23,8 @@ const cards = [
   {
     image: "/made3.webp",
     label: "GUARDIANS",
-    labelColor: "text-soma-red",
+    labelBg: "bg-soma-red",
+    labelColor: "text-white",
     title: "Connect",
     description:
       "Understand what is happening with the child they care about.",
@@ -29,7 +32,8 @@ const cards = [
   {
     image: "/made4.webp",
     label: "STUDENTS",
-    labelColor: "text-soma-blue",
+    labelBg: "bg-soma-blue",
+    labelColor: "text-white",
     title: "Grow",
     description:
       "Experience a school where the systems around learning feel joined up.",
@@ -96,11 +100,11 @@ export function FifthSection() {
                 />
               </div>
               <div className="p-4 md:p-5">
-                <p
-                  className={`text-[11px] font-semibold tracking-wider uppercase mb-2 ${card.labelColor}`}
+                <span
+                  className={`inline-block text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3 ${card.labelBg} ${card.labelColor}`}
                 >
                   {card.label}
-                </p>
+                </span>
                 <h3 className="text-[20px] md:text-[22px] font-semibold text-white mb-2 leading-tight">
                   {card.title}
                 </h3>
