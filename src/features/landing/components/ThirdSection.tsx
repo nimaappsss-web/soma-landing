@@ -9,10 +9,10 @@ export function ThirdSection() {
           {/* Left card - taller */}
           <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
             <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-2">
+            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4">
               Know every student, clearly.
             </h3>
-            <p className="text-[16px] text-gray-4 leading-[1.6] pr-2 max-w-[406px]">
+            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-4 max-w-[406px]">
               Keep student and guardian information organized in one secure place,
               with the right people getting access to the information they need.
             </p>
@@ -32,10 +32,10 @@ export function ThirdSection() {
           {/* Right card - shorter */}
           <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
             <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-2">
+            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4">
               Keep staff in the loop.
             </h3>
-            <p className="text-[16px] text-gray-4 leading-[1.6] pr-2 max-w-[406px]">
+            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-4 max-w-[406px]">
               Connect teachers, admins, and staff with seamless communication
               tools that keep everyone on the same page.
             </p>
@@ -57,10 +57,10 @@ export function ThirdSection() {
           {/* Left bottom card */}
           <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
             <Clipboard variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-2">
+            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4">
               Make attendance easier to manage.
             </h3>
-            <p className="text-[16px] text-gray-4 leading-[1.6] pr-2 max-w-[406px] min-h-[77px]">
+            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-4 max-w-[406px] min-h-[77px]">
               Track attendance consistently, spot gaps early and give your team a
               clearer picture of what's happening across classes.
             </p>
@@ -80,10 +80,10 @@ export function ThirdSection() {
           {/* Right bottom card */}
           <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden flex flex-col">
             <PresentionChart variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-2">
+            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4">
               Put everyone on the same page.
             </h3>
-            <p className="text-[16px] text-gray-4 leading-[1.6] pr-2 max-w-[406px] line-clamp-3 min-h-[77px]">
+            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-4 max-w-[406px] line-clamp-3 min-h-[77px]">
               Share updates, results, and notices with staff and parents so nothing
               gets lost in translation.
             </p>
