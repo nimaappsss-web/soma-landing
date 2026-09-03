@@ -5,7 +5,7 @@ export function ThirdSection() {
   return (
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px]">
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           {/* Left card - taller */}
           <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
             <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
@@ -53,7 +53,7 @@ export function ThirdSection() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           {/* Left bottom card */}
           <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
             <Clipboard variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
