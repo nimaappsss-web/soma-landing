@@ -84,13 +84,13 @@ export function FifthSection() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[9px]">
           {cards.map((card, i) => (
             <div
               key={i}
-              className="bg-[#1A1A1A] rounded-[20px] overflow-hidden"
+              className="bg-[#1A1A1A] rounded-[30px] overflow-hidden"
             >
-              <div className="rounded-t-[20px] overflow-hidden">
+              <div className="rounded-t-[30px] overflow-hidden">
                 <Image
                   src={card.image}
                   alt={card.title}
