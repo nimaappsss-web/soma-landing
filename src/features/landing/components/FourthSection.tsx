@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import {
   TickCircle,
@@ -135,13 +135,29 @@ const tabs = [
 export function FourthSection() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const activeContent = tabs.find((t) => t.id === activeTab) ?? tabs[0];
+  const tabRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [indicator, setIndicator] = useState({ left: 0, width: 0 });
+
+  useEffect(() => {
+    const btn = tabRefs.current.get(activeTab);
+    const track = trackRef.current;
+    if (btn && track) {
+      const trackRect = track.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      setIndicator({
+        left: btnRect.left - trackRect.left,
+        width: btnRect.width,
+      });
+    }
+  }, [activeTab]);
 
   return (
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-16 mb-10 md:mb-14">
         <div>
-          <p className="text-sm sm:text-base font-bold text-soma-black tracking-widest uppercase mb-5">
+          <p className="text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
             The SOMA Advantage
           </p>
           <h2 className="text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black">
@@ -160,16 +176,26 @@ export function FourthSection() {
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap gap-2 bg-white rounded-full p-1.5 w-fit mb-12 md:mb-16">
+      <div
+        ref={trackRef}
+        className="relative flex flex-wrap gap-2 bg-white rounded-full p-1.5 w-fit mb-12 md:mb-16"
+      >
+        {/* Sliding indicator */}
+        <div
+          className="absolute top-1.5 bottom-1.5 bg-soma-black rounded-full transition-all duration-300 ease-in-out"
+          style={{ left: indicator.left, width: indicator.width }}
+        />
         {tabs.map((tab) => (
           <button
             key={tab.id}
+            ref={(el) => {
+              if (el) tabRefs.current.set(tab.id, el);
+            }}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-5 py-2.5 rounded-full text-[14px] font-medium transition-colors ${
-              activeTab === tab.id
-                ? "bg-soma-black text-white"
-                : "text-gray-4 hover:text-soma-black"
-            }`}
+            className="relative z-10 px-5 py-2.5 rounded-full text-[14px] font-medium transition-colors duration-300"
+            style={{
+              color: activeTab === tab.id ? "#FFFFFF" : undefined,
+            }}
           >
             {tab.label}
           </button>
