@@ -220,7 +220,7 @@ export function FourthSection() {
             return (
               <div
                 key={i}
-                className={`absolute bg-white rounded-2xl px-4 py-3 flex items-center gap-3 shadow-lg ${
+                className={`absolute bg-white rounded-[23px] px-4 py-3 flex items-center gap-3 shadow-lg ${
                   i === 0
                     ? "bottom-20 -left-4 md:-left-8"
                     : "top-1/3 -right-2 md:-right-6"
