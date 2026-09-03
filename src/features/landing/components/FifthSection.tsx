@@ -39,20 +39,14 @@ const cards = [
 export function FifthSection() {
   return (
     <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden relative">
-      {/* Blue geometric lines background */}
-      <div className="absolute inset-0 opacity-30">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 1294 800"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M200 0L400 800M0 200L800 0M1294 0L900 800M1294 200L500 0"
-            stroke="#1D4ED8"
-            strokeWidth="1"
-          />
-        </svg>
+      {/* Background - same as section 1 */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src="/somaLineBg.svg"
+          alt=""
+          fill
+          className="object-cover object-left-top md:object-center"
+        />
       </div>
 
       <div className="relative z-10 max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
