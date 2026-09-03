@@ -18,7 +18,7 @@ export function ThirdSection() {
                 with the right people getting access to the information they need.
               </p>
             </div>
-            <div className="pl-4 md:pl-0 mt-10">
+            <div className="pl-4 md:pl-10 mt-10">
               <div className="bg-soma-bg rounded-tl-[30px] flex-1 overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px] h-full">
                   <Image
@@ -45,7 +45,7 @@ export function ThirdSection() {
                 tools that keep everyone on the same page.
               </p>
             </div>
-            <div className="pl-4 md:pl-0 mt-10 flex-1">
+            <div className="pl-4 md:pl-10 mt-10 flex-1">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px] h-full">
                   <Image
@@ -74,7 +74,7 @@ export function ThirdSection() {
                 clearer picture of what&apos;s happening across classes.
               </p>
             </div>
-            <div className="pl-4 md:pl-0 mt-10">
+            <div className="pl-4 md:pl-10 mt-10">
               <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-green bg-white rounded-tl-[30px] h-full">
                   <Image
@@ -101,7 +101,7 @@ export function ThirdSection() {
                 gets lost in translation.
               </p>
             </div>
-            <div className="pl-4 md:pl-0 mt-10">
+            <div className="pl-4 md:pl-10 mt-10">
               <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
                   <Image
