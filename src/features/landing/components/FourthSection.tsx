@@ -181,9 +181,9 @@ export function FourthSection() {
           ref={trackRef}
           className="relative flex md:flex-wrap gap-1.5 md:gap-2 bg-white rounded-full p-1.5 w-fit overflow-x-auto scrollbar-hide"
         >
-          {/* Sliding indicator */}
+          {/* Sliding indicator - desktop only */}
           <div
-            className="absolute top-1.5 bottom-1.5 bg-soma-black rounded-full transition-all duration-300 ease-in-out"
+            className="absolute top-1.5 bottom-1.5 bg-soma-black rounded-full transition-all duration-300 ease-in-out hidden md:block"
             style={{ left: indicator.left, width: indicator.width }}
           />
           {tabs.map((tab) => (
@@ -193,10 +193,11 @@ export function FourthSection() {
                 if (el) tabRefs.current.set(tab.id, el);
               }}
               onClick={() => setActiveTab(tab.id)}
-              className="relative z-10 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-[12px] md:text-[14px] font-medium transition-colors duration-300 whitespace-nowrap shrink-0"
-              style={{
-                color: activeTab === tab.id ? "#FFFFFF" : undefined,
-              }}
+              className={`relative z-10 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-[12px] md:text-[14px] font-medium transition-colors duration-300 whitespace-nowrap shrink-0 ${
+                activeTab === tab.id
+                  ? "bg-soma-black md:bg-transparent text-white"
+                  : ""
+              }`}
             >
               {tab.label}
             </button>
