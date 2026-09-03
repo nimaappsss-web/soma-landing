@@ -237,7 +237,7 @@ export function FourthSection() {
               alt={activeContent.label}
               width={476}
               height={476}
-              className="w-full h-auto aspect-square object-cover"
+              className="w-full h-auto aspect-square object-cover object-center"
             />
           </div>
           {/* Floating cards */}
