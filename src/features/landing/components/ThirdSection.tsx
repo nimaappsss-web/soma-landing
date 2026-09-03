@@ -7,7 +7,7 @@ export function ThirdSection() {
       <div className="flex flex-col gap-6">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left card - taller */}
-          <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
+          <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pl-10 pr-2 md:pr-10 pt-[30px] relative overflow-hidden">
             <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Know every student, clearly.
@@ -30,7 +30,7 @@ export function ThirdSection() {
           </div>
 
           {/* Right card - shorter */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pr-2 md:pr-10 pt-[30px] relative overflow-hidden">
             <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Keep staff in the loop.
@@ -55,7 +55,7 @@ export function ThirdSection() {
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left bottom card */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pr-2 md:pr-10 pt-[30px] relative overflow-hidden">
             <Clipboard variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Make attendance easier to manage.
@@ -78,7 +78,7 @@ export function ThirdSection() {
           </div>
 
           {/* Right bottom card */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden flex flex-col">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pr-2 md:pr-10 pt-[30px] relative overflow-hidden flex flex-col">
             <PresentionChart variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Put everyone on the same page.
