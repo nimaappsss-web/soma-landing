@@ -7,40 +7,44 @@ export function ThirdSection() {
       <div className="flex flex-col gap-6">
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left card - taller */}
-          <div className="flex-[1.5] bg-soma-white-card rounded-[30px] pt-[30px] relative overflow-hidden">
-            <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5 ml-4" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4 pl-4">
-              Know every student, clearly.
-            </h3>
-            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-5 pl-4 max-w-[406px]">
-              Keep student and guardian information organized in one secure place,
-              with the right people getting access to the information they need.
-            </p>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 w-full h-full overflow-hidden ml-auto mt-10 pl-10 pt-4">
-              <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px]">
+          <div className="flex-[1.5] bg-soma-white-card rounded-[30px] relative overflow-hidden flex flex-col">
+            <div className="pl-4 md:pl-10 pr-4 pt-[30px]">
+              <Teacher variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
+              <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
+                Know every student, clearly.
+              </h3>
+              <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] max-w-[406px]">
+                Keep student and guardian information organized in one secure place,
+                with the right people getting access to the information they need.
+              </p>
+            </div>
+            <div className="bg-soma-bg rounded-tl-[30px] right-0 flex-1 overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
+              <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px] h-full">
                 <Image
                   src="/work1.png"
                   alt="Students dashboard"
                   width={700}
                   height={520}
-                  className="h-full w-full rounded-tl-[30px] object-cover object-top-left "
+                  className="h-full w-full rounded-tl-[30px] object-cover object-top-left"
                 />
               </div>
             </div>
           </div>
 
           {/* Right card - shorter */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pt-[30px] relative overflow-hidden">
-            <People variant="Bold" size={28} color="#0D0D0D" className="mb-5 ml-4" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4 pl-4">
-              Keep staff in the loop.
-            </h3>
-            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-5 pl-4 max-w-[406px]">
-              Connect teachers, admins, and staff with seamless communication
-              tools that keep everyone on the same page.
-            </p>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 h-full overflow-hidden ml-auto mt-10 pl-10 pt-4">
-              <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px]">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] relative overflow-hidden flex flex-col">
+            <div className="pl-4 md:pl-10 pr-4 pt-[30px]">
+              <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
+              <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
+                Keep staff in the loop.
+              </h3>
+              <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] max-w-[406px]">
+                Connect teachers, admins, and staff with seamless communication
+                tools that keep everyone on the same page.
+              </p>
+            </div>
+            <div className="bg-soma-bg rounded-tl-[30px] right-0 flex-1 overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
+              <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px] h-full">
                 <Image
                   src="/work2.png"
                   alt="Staff management"
@@ -55,16 +59,18 @@ export function ThirdSection() {
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Left bottom card */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pt-[30px] relative overflow-hidden">
-            <Clipboard variant="Bold" size={28} color="#0D0D0D" className="mb-5 ml-4" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4 pl-4">
-              Make attendance easier to manage.
-            </h3>
-            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-5 pl-4 max-w-[406px] min-h-[77px]">
-              Track attendance consistently, spot gaps early and give your team a
-              clearer picture of what's happening across classes.
-            </p>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 w-full aspect-[4/3] overflow-hidden mt-10 pl-10 pt-4">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] relative overflow-hidden flex flex-col">
+            <div className="pl-4 md:pl-10 pr-4 pt-[30px]">
+              <Clipboard variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
+              <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
+                Make attendance easier to manage.
+              </h3>
+              <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] max-w-[406px] min-h-[77px]">
+                Track attendance consistently, spot gaps early and give your team a
+                clearer picture of what&apos;s happening across classes.
+              </p>
+            </div>
+            <div className="bg-soma-bg rounded-tl-[30px] right-0 aspect-[4/3] overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
               <div className="border-t-10 border-l-10 border-soma-green bg-white rounded-tl-[30px] h-full">
                 <Image
                   src="/work3.png"
@@ -78,16 +84,18 @@ export function ThirdSection() {
           </div>
 
           {/* Right bottom card */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pt-[30px] relative overflow-hidden flex flex-col">
-            <PresentionChart variant="Bold" size={28} color="#0D0D0D" className="mb-5 ml-4" />
-            <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight pr-4 pl-4">
-              Put everyone on the same page.
-            </h3>
-            <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] pr-5 pl-4 max-w-[406px] line-clamp-3 min-h-[77px]">
-              Share updates, results, and notices with staff and parents so nothing
-              gets lost in translation.
-            </p>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 w-full aspect-[4/3] overflow-hidden mt-10 pl-10 pt-4">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] relative overflow-hidden flex flex-col">
+            <div className="pl-4 md:pl-10 pr-4 pt-[30px]">
+              <PresentionChart variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
+              <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
+                Put everyone on the same page.
+              </h3>
+              <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.5] md:leading-[1.6] max-w-[406px] line-clamp-3 min-h-[77px]">
+                Share updates, results, and notices with staff and parents so nothing
+                gets lost in translation.
+              </p>
+            </div>
+            <div className="bg-soma-bg rounded-tl-[30px] right-0 aspect-[4/3] overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
               <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
                 <Image
                   src="/work4.png"
