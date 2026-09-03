@@ -5,6 +5,7 @@ import { HeroBackground } from "@/features/landing/components/HeroBackground";
 import { SecondSection } from "@/features/landing/components/SecondSection";
 import { ThirdSection } from "@/features/landing/components/ThirdSection";
 import { FourthSection } from "@/features/landing/components/FourthSection";
+import { FifthSection } from "@/features/landing/components/FifthSection";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </div>
   );
 }
