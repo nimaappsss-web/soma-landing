@@ -141,7 +141,7 @@ export function FourthSection() {
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-16 mb-10 md:mb-14">
         <div>
-          <p className="text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
+          <p className="text-sm sm:text-base font-bold text-soma-black tracking-widest uppercase mb-5">
             The SOMA Advantage
           </p>
           <h2 className="text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black">
@@ -209,9 +209,9 @@ export function FourthSection() {
             <Image
               src={activeContent.image}
               alt={activeContent.label}
-              width={600}
-              height={500}
-              className="w-full h-auto object-cover"
+              width={476}
+              height={476}
+              className="w-full h-auto aspect-square object-cover"
             />
           </div>
           {/* Floating cards */}
