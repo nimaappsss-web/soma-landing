@@ -78,7 +78,7 @@ export function ThirdSection() {
           </div>
 
           {/* Right bottom card */}
-          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
+          <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden flex flex-col">
             <PresentionChart variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Put everyone on the same page.
@@ -87,8 +87,8 @@ export function ThirdSection() {
               Share updates, results, and notices with staff and parents so nothing
               gets lost in translation.
             </p>
-            <div className="bg-soma-bg rounded-tl-[30px] right-0 h-full overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px]">
+            <div className="bg-soma-bg rounded-tl-[30px] right-0 flex-1 overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
+              <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
                 <Image
                   src="/work4.png"
                   alt="Communication"
