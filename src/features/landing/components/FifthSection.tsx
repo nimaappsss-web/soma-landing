@@ -101,7 +101,7 @@ export function FifthSection() {
               </div>
               <div className="p-4 md:p-5">
                 <span
-                  className={`inline-block text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-3 ${card.labelBg} ${card.labelColor}`}
+                  className={`inline-block text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-[5px] mb-3 ${card.labelBg} ${card.labelColor}`}
                 >
                   {card.label}
                 </span>
