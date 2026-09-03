@@ -38,7 +38,7 @@ export function ThirdSection() {
             Connect teachers, admins, and staff with seamless communication
             tools that keep everyone on the same page.
           </p>
-          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4">
+          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-full overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
             <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px]">
               <Image
                 src="/work2.png"
