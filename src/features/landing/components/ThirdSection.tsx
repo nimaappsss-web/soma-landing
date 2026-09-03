@@ -15,17 +15,19 @@ export function ThirdSection() {
             Keep student and guardian information organized in one secure place,
             with the right people getting access to the information they need.
           </p>
-          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4">
-            <Image
-              src="/work1.png"
-              alt="Students dashboard"
-              width={450}
-              height={320}
-              className="w-full h-full rounded-tl-[30px] object-cover object-top-left border-t-10 border-l-10 border-soma-red "
-            />
+          <div className="bg-soma-bg rounded-tl-[30px] right-0 w-full h-full overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
+            <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px]">
+              <Image
+                src="/work1.png"
+                alt="Students dashboard"
+                width={700}
+                height={520}
+                className="h-full w-full rounded-tl-[30px] object-cover object-top-left "
+              />
+            </div>
           </div>
         </div>
- 
+
         {/* Right card - shorter */}
         <div className="flex-1 bg-soma-white-card rounded-[30px] pl-10 pt-[30px] relative overflow-hidden">
           <People variant="Bold" size={28} color="#0D0D0D" className="mb-5" />
@@ -37,13 +39,15 @@ export function ThirdSection() {
             tools that keep everyone on the same page.
           </p>
           <div className="bg-soma-bg rounded-tl-[30px] right-0 w-[75%] h-55.5 overflow-hidden ml-auto mt-39.75 pl-4.5 pt-4">
-            <Image
-              src="/work2.png"
-              alt="Staff management"
-              width={450}
-              height={320}
-              className="w-full h-full rounded-tl-[30px] object-cover object-top-left border-t-10 border-l-10 border-yellow-400"
-            />
+            <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px]">
+              <Image
+                src="/work2.png"
+                alt="Staff management"
+                width={700}
+                height={520}
+                className="w-full h-full rounded-tl-[30px] object-cover object-top-left"
+              />
+            </div>
           </div>
         </div>
       </div>
