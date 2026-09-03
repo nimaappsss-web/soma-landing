@@ -179,7 +179,7 @@ export function FourthSection() {
       <div className="mb-8 md:mb-16">
         <div
           ref={trackRef}
-          className="relative flex md:flex-wrap gap-1.5 md:gap-2 bg-white rounded-full p-1.5 w-fit overflow-x-auto scrollbar-hide"
+          className="relative flex md:flex-wrap gap-1.5 md:gap-2 bg-white rounded-full p-1.5 w-full md:w-fit overflow-x-auto scrollbar-hide"
         >
           {/* Sliding indicator - desktop only */}
           <div
