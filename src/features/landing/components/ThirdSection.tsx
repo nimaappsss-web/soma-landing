@@ -88,7 +88,7 @@ export function ThirdSection() {
               gets lost in translation.
             </p>
             <div className="bg-soma-bg rounded-tl-[30px] right-0 h-full overflow-hidden ml-auto mt-10 pl-4.5 pt-4">
-              <div className="border-t-10 border-l-10 border-sky-400 bg-white rounded-tl-[30px]">
+              <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px]">
                 <Image
                   src="/work4.png"
                   alt="Communication"
