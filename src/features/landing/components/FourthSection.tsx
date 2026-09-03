@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { TickCircle } from "iconsax-react";
+import {
+  TickCircle,
+  UserAdd,
+  AddSquare,
+  People,
+  Chart,
+  TimerStart,
+  Document,
+  DollarCircle,
+} from "iconsax-react";
 
 const tabs = [
   {
@@ -19,18 +28,18 @@ const tabs = [
     image: "/exp1.webp",
     floatingCards: [
       {
-        icon: "🎓",
+        Icon: UserAdd,
         title: "Invite Teachers",
         description: "Onboard teachers and staff",
         iconBg: "bg-soma-blue/10",
-        iconColor: "text-soma-blue",
+        iconColor: "#1D4ED8",
       },
       {
-        icon: "📋",
+        Icon: AddSquare,
         title: "Create Classes",
         description: "Define class levels and specific arms",
         iconBg: "bg-yellow-100",
-        iconColor: "text-yellow-600",
+        iconColor: "#EAB308",
       },
     ],
   },
@@ -48,18 +57,18 @@ const tabs = [
     image: "/exp2.webp",
     floatingCards: [
       {
-        icon: "👥",
+        Icon: People,
         title: "Parent Portal",
         description: "Keep guardians in the loop",
         iconBg: "bg-soma-green/10",
-        iconColor: "text-soma-green",
+        iconColor: "#23A64E",
       },
       {
-        icon: "📊",
+        Icon: Chart,
         title: "Live Dashboard",
         description: "See what matters at a glance",
         iconBg: "bg-soma-blue/10",
-        iconColor: "text-soma-blue",
+        iconColor: "#1D4ED8",
       },
     ],
   },
@@ -77,18 +86,18 @@ const tabs = [
     image: "/exp3.webp",
     floatingCards: [
       {
-        icon: "⏰",
+        Icon: TimerStart,
         title: "Auto Reminders",
         description: "Never miss a deadline again",
         iconBg: "bg-soma-red/10",
-        iconColor: "text-soma-red",
+        iconColor: "#CD432F",
       },
       {
-        icon: "📁",
+        Icon: Document,
         title: "Digital Records",
         description: "All files in one secure place",
         iconBg: "bg-soma-green/10",
-        iconColor: "text-soma-green",
+        iconColor: "#23A64E",
       },
     ],
   },
@@ -106,18 +115,18 @@ const tabs = [
     image: "/exp4.webp",
     floatingCards: [
       {
-        icon: "📈",
+        Icon: Chart,
         title: "Performance Charts",
         description: "Track student progress over time",
         iconBg: "bg-soma-blue/10",
-        iconColor: "text-soma-blue",
+        iconColor: "#1D4ED8",
       },
       {
-        icon: "💰",
+        Icon: DollarCircle,
         title: "Fee Reports",
         description: "Complete financial overview",
         iconBg: "bg-soma-green/10",
-        iconColor: "text-soma-green",
+        iconColor: "#23A64E",
       },
     ],
   },
@@ -206,30 +215,33 @@ export function FourthSection() {
             />
           </div>
           {/* Floating cards */}
-          {activeContent.floatingCards.map((card, i) => (
-            <div
-              key={i}
-              className={`absolute bg-white rounded-2xl px-4 py-3 flex items-center gap-3 shadow-lg ${
-                i === 0
-                  ? "bottom-20 -left-4 md:-left-8"
-                  : "top-1/3 -right-2 md:-right-6"
-              }`}
-            >
+          {activeContent.floatingCards.map((card, i) => {
+            const { Icon, title, description, iconBg, iconColor } = card;
+            return (
               <div
-                className={`flex items-center justify-center w-10 h-10 rounded-xl ${card.iconBg}`}
+                key={i}
+                className={`absolute bg-white rounded-2xl px-4 py-3 flex items-center gap-3 shadow-lg ${
+                  i === 0
+                    ? "bottom-20 -left-4 md:-left-8"
+                    : "top-1/3 -right-2 md:-right-6"
+                }`}
               >
-                <span className={`text-xl ${card.iconColor}`}>{card.icon}</span>
+                <div
+                  className={`flex items-center justify-center w-10 h-10 rounded-xl ${iconBg}`}
+                >
+                  <Icon variant="Bold" size={20} color={iconColor} />
+                </div>
+                <div>
+                  <p className="text-[14px] font-semibold text-soma-black leading-tight">
+                    {title}
+                  </p>
+                  <p className="text-[12px] text-gray-4 leading-tight">
+                    {description}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-[14px] font-semibold text-soma-black leading-tight">
-                  {card.title}
-                </p>
-                <p className="text-[12px] text-gray-4 leading-tight">
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
