@@ -83,7 +83,7 @@ export function ThirdSection() {
             <h3 className="text-[24px] font-semibold text-soma-black mb-1 leading-tight">
               Put everyone on the same page.
             </h3>
-            <p className="text-[16px] text-gray-4 leading-[1.6] max-w-[406px]">
+            <p className="text-[16px] text-gray-4 leading-[1.6] max-w-[406px] line-clamp-3">
               Share updates, results, and notices with staff and parents so nothing
               gets lost in translation.
             </p>
