@@ -234,7 +234,10 @@ export function FourthSection() {
 
         {/* Right - Image */}
         <div className="flex-1 relative w-full">
-          <div className="rounded-[20px] md:rounded-[24px] overflow-hidden">
+          <div
+            key={activeTab}
+            className="rounded-[20px] md:rounded-[24px] overflow-hidden animate-fadeIn"
+          >
             <Image
               src={activeContent.image}
               alt={activeContent.label}
