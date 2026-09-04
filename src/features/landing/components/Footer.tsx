@@ -15,7 +15,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="w-full bg-soma-black rounded-[30px] mt-2 mb-[10px] px-[18px] md:px-[62px] py-8 md:py-10">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
+      <div className="flex flex-row items-center justify-between gap-6 mb-6">
         {/* Logo */}
         <Image src={somaWhite} alt="SOMA" width={80} height={30} />
 
