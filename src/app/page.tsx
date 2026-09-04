@@ -7,6 +7,8 @@ import { ThirdSection } from "@/features/landing/components/ThirdSection";
 import { FourthSection } from "@/features/landing/components/FourthSection";
 import { FifthSection } from "@/features/landing/components/FifthSection";
 import { SixthSection } from "@/features/landing/components/SixthSection";
+import { SeventhSection } from "@/features/landing/components/SeventhSection";
+import { Footer } from "@/features/landing/components/Footer";
 
 export default function Home() {
   return (
@@ -53,6 +55,8 @@ export default function Home() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
+      <SeventhSection />
+      <Footer />
     </div>
   );
 }
