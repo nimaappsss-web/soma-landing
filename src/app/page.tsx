@@ -12,7 +12,7 @@ import { Footer } from "@/features/landing/components/Footer";
 
 export default function Home() {
   return (
-    <div className="h-screen min-h-[700px] p-[10px]">
+    <div className="min-h-[700px] p-[10px] pb-[10px]">
       <div className="relative h-full min-h-[680px] bg-soma-black rounded-[30px] overflow-hidden flex flex-col mb-[10px]">
         <HeroBackground />
         <Navbar />
