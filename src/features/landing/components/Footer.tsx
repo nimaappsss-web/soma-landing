@@ -37,7 +37,7 @@ export function Footer() {
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10">
         {/* Copyright */}
-        <p className="text-[13px] text-[#626262]">
+        <p className="text-[13px] text-[#9098AC]">
           &copy; 2026 Soma. All Rights Reserved.
         </p>
 
@@ -47,7 +47,7 @@ export function Footer() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[13px] text-[#626262] hover:text-white transition-colors"
+              className="text-[13px] text-[#9098AC] hover:text-white transition-colors"
             >
               {link.label}
             </Link>
