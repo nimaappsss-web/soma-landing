@@ -61,9 +61,9 @@ function FaqItem({
         </span>
         <span className="shrink-0 transition-transform duration-300">
           {isOpen ? (
-            <Minus variant="Bold" size={20} color="#0D0D0D" />
+            <Minus variant="Bold" size={16} color="#0D0D0D" />
           ) : (
-            <Add variant="Bold" size={20} color="#0D0D0D" />
+            <Add variant="Bold" size={16} color="#0D0D0D" />
           )}
         </span>
       </button>
