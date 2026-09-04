@@ -46,7 +46,7 @@ const cards = [
 
 export function FifthSection() {
   return (
-    <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden">
+    <section className="w-full bg-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden">
       <div className="max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 max-w-[390px] mx-auto">
