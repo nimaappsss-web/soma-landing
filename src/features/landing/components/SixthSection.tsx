@@ -30,7 +30,7 @@ const rightFaqs = [
   {
     question: "How much does SOMA cost?",
     answer:
-      'The specific pricing details are provided in the <a href="#pricing" class="text-soma-blue underline">Pricing Page</a>. You can also reach out directly to our <a href="#sales" class="text-soma-blue underline">Sales Team</a> for information on pricing and migrating from your current software.',
+      'The specific pricing details are provided in the <a href="/" class="text-soma-blue underline">Pricing Page</a>. You can also reach out directly to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for information on pricing and migrating from your current software.',
   },
   {
     question: "Is SOMA available offline?",
@@ -89,7 +89,7 @@ export function SixthSection() {
   const [openRight, setOpenRight] = useState<number | null>(1);
 
   return (
-    <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
+    <section id="for-schools" className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
       {/* Header */}
       <div className="mb-12 md:mb-16">
         <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">

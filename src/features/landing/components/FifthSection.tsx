@@ -47,7 +47,7 @@ const cards = [
 
 export function FifthSection() {
   return (
-    <section className="w-full bg-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden relative">
+    <section id="why-soma" className="w-full bg-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden relative">
       {/* Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
@@ -80,7 +80,7 @@ export function FifthSection() {
               Contact Sales
             </Link>
             <Link
-              href="#explore"
+              href="#product"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
               Explore SOMA

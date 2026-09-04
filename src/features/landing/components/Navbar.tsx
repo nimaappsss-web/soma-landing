@@ -4,6 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 import somaWhite from "../../../../public/somaWhite.svg";
 
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "Product", href: "#product" },
+  { label: "Why SOMA", href: "#why-soma" },
+  { label: "For schools", href: "#for-schools" },
+  { label: "Contact", href: "#contact-sales" },
+];
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -14,15 +22,15 @@ export function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8 px-8 h-[53px] rounded-[20px] border border-white/15 bg-white/5 backdrop-blur-sm">
-          {["Home", "Product", "Why SOMA", "For schools", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+              key={item.label}
+              href={item.href}
               className={`text-[16px] font-medium transition-colors ${
-                item === "Home" ? "text-white" : "text-[#9098AC] hover:text-white"
+                item.label === "Home" ? "text-white" : "text-[#9098AC] hover:text-white"
               }`}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -55,16 +63,16 @@ export function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-soma-black/95 backdrop-blur-lg border-b border-white/10 px-6 py-6 flex flex-col gap-4">
-          {["Home", "Product", "Why SOMA", "For schools", "Contact"].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+              key={item.label}
+              href={item.href}
               onClick={() => setOpen(false)}
               className={`text-[16px] font-medium ${
-                item === "Home" ? "text-white" : "text-[#9098AC]"
+                item.label === "Home" ? "text-white" : "text-[#9098AC]"
               }`}
             >
-              {item}
+              {item.label}
             </a>
           ))}
           <hr className="border-white/10" />

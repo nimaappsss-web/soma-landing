@@ -4,7 +4,7 @@ import last from "../../../../public/last.webp";
 
 export function SeventhSection() {
   return (
-    <section className="w-full bg-black rounded-[30px] mt-[72px] mb-2 overflow-hidden">
+    <section id="contact-sales" className="w-full bg-black rounded-[30px] mt-[72px] mb-2 overflow-hidden">
       <div className="max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-0 flex flex-col items-center">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
@@ -25,7 +25,7 @@ export function SeventhSection() {
               Contact Sales
             </Link>
             <Link
-              href="#explore"
+              href="#product"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
               Explore SOMA
