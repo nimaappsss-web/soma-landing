@@ -4,6 +4,7 @@ import made1 from "../../../../public/made1.webp";
 import made2 from "../../../../public/made2.webp";
 import made3 from "../../../../public/made3.webp";
 import made4 from "../../../../public/made4.webp";
+import somaLineBg from "../../../../public/somaLineBg.svg";
 
 const cards = [
   {
@@ -46,8 +47,18 @@ const cards = [
 
 export function FifthSection() {
   return (
-    <section className="w-full bg-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden">
-      <div className="max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
+    <section className="w-full bg-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden relative">
+      {/* Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src={somaLineBg}
+          alt=""
+          fill
+          className="object-cover object-left-top md:object-center"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 max-w-[390px] mx-auto">
           <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-white mb-5">
