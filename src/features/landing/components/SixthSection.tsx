@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Add, Minus } from "iconsax-react";
 
-const faqs = [
+const leftFaqs = [
   {
     question: "What is SOMA?",
     answer:
@@ -19,6 +19,9 @@ const faqs = [
     answer:
       "Absolutely. SOMA supports importing your existing student and school records so you don't have to start from scratch.",
   },
+];
+
+const rightFaqs = [
   {
     question: "What does setup look like for administrators?",
     answer:
@@ -36,16 +39,58 @@ const faqs = [
   },
 ];
 
-export function SixthSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(4);
+function FaqItem({
+  question,
+  answer,
+  isOpen,
+  onToggle,
+}: {
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="border-b border-soma-black/10">
+      <button
+        onClick={onToggle}
+        className="w-full flex items-center justify-between py-5 md:py-6 text-left gap-4"
+      >
+        <span className="text-[15px] md:text-[16px] font-semibold text-soma-black">
+          {question}
+        </span>
+        <span className="shrink-0 transition-transform duration-300">
+          {isOpen ? (
+            <Minus variant="Bold" size={20} color="#0D0D0D" />
+          ) : (
+            <Add variant="Bold" size={20} color="#0D0D0D" />
+          )}
+        </span>
+      </button>
+      <div
+        className="grid transition-[grid-template-rows] duration-300 ease-in-out"
+        style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+      >
+        <div className="overflow-hidden">
+          <div className="pb-5 md:pb-6">
+            <p
+              className="text-[14px] md:text-[15px] text-gray-4 leading-[1.7]"
+              dangerouslySetInnerHTML={{ __html: answer }}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+export function SixthSection() {
+  const [openLeft, setOpenLeft] = useState<number | null>(null);
+  const [openRight, setOpenRight] = useState<number | null>(1);
 
   return (
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
-      <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+      <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-end">
         {/* Left */}
         <div className="lg:w-[40%]">
           <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
@@ -65,45 +110,33 @@ export function SixthSection() {
           </p>
         </div>
 
-        {/* Right - FAQ Grid */}
-        <div className="lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-0">
-          {faqs.map((faq, i) => {
-            const isOpen = openIndex === i;
-            return (
-              <div
+        {/* Right - Two independent FAQ columns */}
+        <div className="lg:w-[60%] flex flex-col sm:flex-row gap-x-8 gap-y-0">
+          {/* Left column */}
+          <div className="flex-1">
+            {leftFaqs.map((faq, i) => (
+              <FaqItem
                 key={i}
-                className={`border-b border-soma-black/10 ${
-                  i < faqs.length - (faqs.length % 2 === 0 ? 2 : 1)
-                    ? "sm:border-b"
-                    : ""
-                }`}
-              >
-                <button
-                  onClick={() => toggle(i)}
-                  className="w-full flex items-center justify-between py-5 md:py-6 text-left gap-4"
-                >
-                  <span className="text-[15px] md:text-[16px] font-medium text-soma-black">
-                    {faq.question}
-                  </span>
-                  <span className="shrink-0">
-                    {isOpen ? (
-                      <Minus variant="Bold" size={20} color="#0D0D0D" />
-                    ) : (
-                      <Add variant="Bold" size={20} color="#0D0D0D" />
-                    )}
-                  </span>
-                </button>
-                {isOpen && (
-                  <div className="pb-5 md:pb-6">
-                    <p
-                      className="text-[14px] md:text-[15px] text-gray-4 leading-[1.7]"
-                      dangerouslySetInnerHTML={{ __html: faq.answer }}
-                    />
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openLeft === i}
+                onToggle={() => setOpenLeft(openLeft === i ? null : i)}
+              />
+            ))}
+          </div>
+
+          {/* Right column */}
+          <div className="flex-1">
+            {rightFaqs.map((faq, i) => (
+              <FaqItem
+                key={i}
+                question={faq.question}
+                answer={faq.answer}
+                isOpen={openRight === i}
+                onToggle={() => setOpenRight(openRight === i ? null : i)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
