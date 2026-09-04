@@ -1,22 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import somaLineBg from "../../../../public/somaLineBg.svg";
 import last from "../../../../public/last.webp";
 
 export function SeventhSection() {
   return (
-    <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-2 overflow-hidden relative">
-      {/* Background */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image
-          src={somaLineBg}
-          alt=""
-          fill
-          className="object-cover object-left-top md:object-center"
-        />
-      </div>
-
-      <div className="relative z-10 max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-0 flex flex-col items-center">
+    <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-2 overflow-hidden">
+      <div className="max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-0 flex flex-col items-center">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-white mb-5">
