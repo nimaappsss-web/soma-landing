@@ -103,7 +103,7 @@ export function SixthSection() {
             online.
           </span>
         </h2>
-        <p className="text-[18px] text-gray-4 leading-[1.7] max-w-[380px]">
+        <p className="text-[18px] text-gray-4 leading-[1.7] max-w-[428px]">
           The last thing you need is another complicated rollout. SOMA is
           designed to start with the way your school already works.
         </p>
