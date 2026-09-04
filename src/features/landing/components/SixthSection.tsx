@@ -90,28 +90,27 @@ export function SixthSection() {
 
   return (
     <section className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]">
-      <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-end">
-        {/* Left */}
-        <div className="lg:w-[40%]">
-          <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
-            Let&apos;s answer some questions
-          </p>
-          <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black mb-5">
-            Before you bring{" "}
-            <br className="hidden sm:block" />
-            your school{" "}
-            <span className="font-hand font-bold text-soma-blue italic">
-              online.
-            </span>
-          </h2>
-          <p className="text-[14px] md:text-[16px] text-gray-4 leading-[1.7] max-w-[380px]">
-            The last thing you need is another complicated rollout. SOMA is
-            designed to start with the way your school already works.
-          </p>
-        </div>
+      {/* Header */}
+      <div className="mb-12 md:mb-16">
+        <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
+          Let&apos;s answer some questions
+        </p>
+        <h2 className="text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black mb-5">
+          Before you bring{" "}
+          <br className="hidden sm:block" />
+          your school{" "}
+          <span className="font-hand font-bold text-soma-blue italic">
+            online.
+          </span>
+        </h2>
+        <p className="text-[18px] text-gray-4 leading-[1.7] max-w-[380px]">
+          The last thing you need is another complicated rollout. SOMA is
+          designed to start with the way your school already works.
+        </p>
+      </div>
 
-        {/* Right - Two independent FAQ columns */}
-        <div className="lg:w-[60%] flex flex-col sm:flex-row gap-x-8 gap-y-0">
+      {/* FAQ Grid */}
+      <div className="flex flex-col sm:flex-row gap-x-8 gap-y-0">
           {/* Left column */}
           <div className="flex-1">
             {leftFaqs.map((faq, i) => (
@@ -138,7 +137,6 @@ export function SixthSection() {
             ))}
           </div>
         </div>
-      </div>
     </section>
   );
 }
