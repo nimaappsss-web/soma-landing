@@ -54,7 +54,7 @@ function FaqItem({
     <div className="border-b border-soma-black/10">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-5 md:py-6 text-left gap-4"
+        className="w-full flex items-center justify-between py-7 md:py-8 text-left gap-4"
       >
         <span className="text-[15px] md:text-[16px] font-semibold text-soma-black">
           {question}
