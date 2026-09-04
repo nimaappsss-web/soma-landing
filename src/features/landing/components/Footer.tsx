@@ -35,7 +35,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
         {/* Copyright */}
         <p className="text-[13px] text-[#9098AC]">
           &copy; 2026 Soma. All Rights Reserved.
