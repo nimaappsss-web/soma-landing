@@ -99,7 +99,7 @@ export function FifthSection() {
                   className="w-full h-auto aspect-[3/2] object-cover object-center"
                 />
               </div>
-              <div className="p-3 md:p-4">
+              <div className="p-4 md:p-4">
                 <span
                   className={`inline-block text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-[5px] mb-3 ${card.labelBg} ${card.labelColor}`}
                 >
