@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Global } from "iconsax-react";
+import { Facebook, Instagram, Message } from "iconsax-react";
+import somaWhite from "../../../../public/somaWhite.svg";
 
 const footerLinks = [
   { label: "Features", href: "#features" },
@@ -16,17 +17,17 @@ export function Footer() {
     <footer className="w-full bg-soma-black rounded-[30px] mt-2 mb-[10px] px-[18px] md:px-[62px] py-8 md:py-10">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
         {/* Logo */}
-        <Image src="/somaWhite.svg" alt="SOMA" width={80} height={30} />
+        <Image src={somaWhite} alt="SOMA" width={80} height={30} />
 
         {/* Social icons */}
         <div className="flex items-center gap-4">
-          <Link href="#" className="text-white/60 hover:text-white transition-colors">
+          <Link href="#" className="text-white hover:text-white/80 transition-colors">
             <Facebook variant="Bold" size={20} color="currentColor" />
           </Link>
-          <Link href="#" className="text-white/60 hover:text-white transition-colors">
-            <Global variant="Bold" size={20} color="currentColor" />
+          <Link href="#" className="text-white hover:text-white/80 transition-colors">
+            <Message variant="Bold" size={20} color="currentColor" />
           </Link>
-          <Link href="#" className="text-white/60 hover:text-white transition-colors">
+          <Link href="#" className="text-white hover:text-white/80 transition-colors">
             <Instagram variant="Bold" size={20} color="currentColor" />
           </Link>
         </div>

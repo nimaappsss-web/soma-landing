@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Teacher, People, Clipboard, PresentionChart } from "iconsax-react";
+import work1 from "../../../../public/work1.png";
+import work2 from "../../../../public/work2.png";
+import work3 from "../../../../public/work3.png";
+import work4 from "../../../../public/work4.png";
 
 export function ThirdSection() {
   return (
@@ -22,7 +26,7 @@ export function ThirdSection() {
               <div className="bg-soma-bg rounded-tl-[30px] flex-1 overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-red bg-white rounded-tl-[30px] h-full">
                   <Image
-                    src="/work1.png"
+                    src={work1}
                     alt="Students dashboard"
                     width={700}
                     height={520}
@@ -49,7 +53,7 @@ export function ThirdSection() {
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-yellow-400 bg-white rounded-tl-[30px] h-full">
                   <Image
-                    src="/work2.png"
+                    src={work2}
                     alt="Staff management"
                     width={700}
                     height={520}
@@ -78,7 +82,7 @@ export function ThirdSection() {
               <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-green bg-white rounded-tl-[30px] h-full">
                   <Image
-                    src="/work3.png"
+                    src={work3}
                     alt="Attendance"
                     width={700}
                     height={520}
@@ -105,7 +109,7 @@ export function ThirdSection() {
               <div className="bg-soma-bg rounded-tl-[30px] aspect-[4/3] overflow-hidden pl-4.5 pt-4">
                 <div className="border-t-10 border-l-10 border-soma-blue bg-white rounded-tl-[30px] h-full">
                   <Image
-                    src="/work4.png"
+                    src={work4}
                     alt="Communication"
                     width={700}
                     height={520}

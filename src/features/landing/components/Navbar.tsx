@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import somaWhite from "../../../../public/somaWhite.svg";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,7 +10,7 @@ export function Navbar() {
   return (
     <nav className="relative z-20 w-full">
       <div className="max-w-[1294px] mx-auto flex items-center justify-between px-6 md:px-10 pt-[40px] md:pt-[53px] pb-4">
-        <Image src="/somaWhite.svg" alt="Soma" width={130} height={28} className="brightness-0 invert" />
+        <Image src={somaWhite} alt="Soma" width={130} height={28} className="brightness-0 invert" />
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8 px-8 h-[53px] rounded-[20px] border border-white/15 bg-white/5 backdrop-blur-sm">

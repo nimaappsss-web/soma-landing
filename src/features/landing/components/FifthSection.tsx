@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import made1 from "../../../../public/made1.webp";
+import made2 from "../../../../public/made2.webp";
+import made3 from "../../../../public/made3.webp";
+import made4 from "../../../../public/made4.webp";
 
 const cards = [
   {
-    image: "/made1.webp",
+    image: made1,
     label: "LEADERSHIP",
     labelBg: "bg-yellow-500",
     labelColor: "text-soma-black",
@@ -12,7 +16,7 @@ const cards = [
       "See the school clearly. Make decisions with current information.",
   },
   {
-    image: "/made2.webp",
+    image: made2,
     label: "TEACHERS",
     labelBg: "bg-soma-green",
     labelColor: "text-soma-black",
@@ -21,7 +25,7 @@ const cards = [
       "Spend less time on admin. Keep classes and learning moving.",
   },
   {
-    image: "/made3.webp",
+    image: made3,
     label: "GUARDIANS",
     labelBg: "bg-soma-red",
     labelColor: "text-white",
@@ -30,7 +34,7 @@ const cards = [
       "Understand what is happening with the child they care about.",
   },
   {
-    image: "/made4.webp",
+    image: made4,
     label: "STUDENTS",
     labelBg: "bg-soma-blue",
     labelColor: "text-white",
@@ -42,18 +46,8 @@ const cards = [
 
 export function FifthSection() {
   return (
-    <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden relative">
-      {/* Background - same as section 1 */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image
-          src="/somaLineBg.svg"
-          alt=""
-          fill
-          className="object-cover object-left-top md:object-center"
-        />
-      </div>
-
-      <div className="relative z-10 max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
+    <section className="w-full bg-soma-black rounded-[30px] mt-[72px] mb-[86px] overflow-hidden">
+      <div className="max-w-[1294px] mx-auto px-[18px] md:px-[62px] pt-[72px] md:pt-[100px] pb-[72px] md:pb-[100px]">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 max-w-[390px] mx-auto">
           <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-white mb-5">

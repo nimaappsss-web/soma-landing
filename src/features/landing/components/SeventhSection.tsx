@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import somaLineBg from "../../../../public/somaLineBg.svg";
+import last from "../../../../public/last.webp";
 
 export function SeventhSection() {
   return (
@@ -7,7 +9,7 @@ export function SeventhSection() {
       {/* Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <Image
-          src="/somaLineBg.svg"
+          src={somaLineBg}
           alt=""
           fill
           className="object-cover object-left-top md:object-center"
@@ -45,7 +47,7 @@ export function SeventhSection() {
         {/* Laptop Image */}
         <div className="w-full max-w-[800px] mx-auto -mb-1">
           <Image
-            src="/last.webp"
+            src={last}
             alt="SOMA Dashboard on laptop"
             width={800}
             height={500}

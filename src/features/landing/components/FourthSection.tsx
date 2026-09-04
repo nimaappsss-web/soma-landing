@@ -12,6 +12,10 @@ import {
   Document,
   DollarCircle,
 } from "iconsax-react";
+import exp1 from "../../../../public/exp1.webp";
+import exp2 from "../../../../public/exp2.webp";
+import exp3 from "../../../../public/exp3.webp";
+import exp4 from "../../../../public/exp4.webp";
 
 const tabs = [
   {
@@ -25,7 +29,7 @@ const tabs = [
       "Move your existing student and school information into SOMA without rebuilding everything from scratch.",
       "The simple interface makes it easy for administrators and staff to understand the system and get moving.",
     ],
-    image: "/exp1.webp",
+    image: exp1,
     floatingCards: [
       {
         Icon: UserAdd,
@@ -54,7 +58,7 @@ const tabs = [
       "Minimal learning curve so staff can focus on their actual work",
       "Built for real school workflows, not generic business templates",
     ],
-    image: "/exp2.webp",
+    image: exp2,
     floatingCards: [
       {
         Icon: People,
@@ -83,7 +87,7 @@ const tabs = [
       "Centralized communication between staff, students and parents",
       "Quick access to records without digging through filing cabinets",
     ],
-    image: "/exp3.webp",
+    image: exp3,
     floatingCards: [
       {
         Icon: TimerStart,
@@ -112,7 +116,7 @@ const tabs = [
       "Financial summaries and fee collection reports in one click",
       "Attendance analytics across classes and time periods",
     ],
-    image: "/exp4.webp",
+    image: exp4,
     floatingCards: [
       {
         Icon: Chart,

@@ -1,24 +1,27 @@
 import Image from "next/image";
+import heroPic1 from "../../../../public/heroPic1.png";
+import heroPic2 from "../../../../public/heroPic2.png";
+import heroPic3 from "../../../../public/heroPic3.png";
 
 export function HeroImages() {
   return (
     <div className="relative w-full max-w-[900px] mx-auto h-[250px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
       <Image
-        src="/heroPic3.png"
+        src={heroPic3}
         alt="Graduate"
         width={215}
         height={300}
         className="absolute left-[10px] sm:left-[40px] lg:left-[80px] bottom-0 z-[1] rounded-[16px] sm:rounded-[24px] w-[140px] sm:w-[180px] lg:w-[215px] h-auto"
       />
       <Image
-        src="/heroPic2.png"
+        src={heroPic2}
         alt="Students"
         width={379}
         height={360}
         className="absolute left-1/2 -translate-x-1/2 bottom-0 z-0 rounded-[16px] sm:rounded-[24px] w-[220px] sm:w-[280px] lg:w-[379px] h-auto"
       />
       <Image
-        src="/heroPic1.png"
+        src={heroPic1}
         alt="Teacher"
         width={226}
         height={300}
