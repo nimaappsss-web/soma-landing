@@ -20,7 +20,7 @@ export function Footer() {
         <Image src={somaWhite} alt="SOMA" width={80} height={30} />
 
         {/* Social icons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 border border-white/15 rounded-full px-6 py-2.5">
           <Link href="#" className="text-white hover:text-white/80 transition-colors">
             <Facebook variant="Bold" size={20} color="currentColor" />
           </Link>
