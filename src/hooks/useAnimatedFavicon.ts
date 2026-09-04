@@ -3,8 +3,11 @@ import { useEffect, useRef } from "react";
 export const useAnimatedFavicon = (frames: string[], schedule: number[]) => {
   const framesRef = useRef(frames);
   const scheduleRef = useRef(schedule);
-  framesRef.current = frames;
-  scheduleRef.current = schedule;
+
+  useEffect(() => {
+    framesRef.current = frames;
+    scheduleRef.current = schedule;
+  }, [frames, schedule]);
 
   useEffect(() => {
     framesRef.current.forEach((src) => {
