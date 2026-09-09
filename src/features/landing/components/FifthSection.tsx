@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { TrackedCTA } from "@/components/TrackedCTA";
 import made1 from "../../../../public/made1.webp";
 import made2 from "../../../../public/made2.webp";
 import made3 from "../../../../public/made3.webp";
@@ -73,18 +73,22 @@ export function FifthSection() {
             underlying information stays connected.
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
-            <Link
+            <TrackedCTA
               href="#contact-sales"
+              section="made-for-schools"
+              buttonName="Contact Sales"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-colors"
             >
               Contact Sales
-            </Link>
-            <Link
+            </TrackedCTA>
+            <TrackedCTA
               href="#product"
+              section="made-for-schools"
+              buttonName="Explore SOMA"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
               Explore SOMA
-            </Link>
+            </TrackedCTA>
           </div>
         </div>
 

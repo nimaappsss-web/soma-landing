@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { trackTabClick } from "@/lib/analytics";
+
 import {
   TickCircle,
   UserAdd,
@@ -196,7 +198,10 @@ export function FourthSection() {
               ref={(el) => {
                 if (el) tabRefs.current.set(tab.id, el);
               }}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => {
+                setActiveTab(tab.id);
+                trackTabClick(tab.label);
+              }}
               className={`relative z-10 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-[12px] md:text-[14px] font-medium transition-colors duration-300 whitespace-nowrap shrink-0 ${
                 activeTab === tab.id
                   ? "bg-soma-black md:bg-transparent text-white"

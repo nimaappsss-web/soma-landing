@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { TrackedCTA } from "@/components/TrackedCTA";
+import { ScrollTracker } from "@/components/ScrollTracker";
 import { Navbar } from "@/features/landing/components/Navbar";
 import { HeroImages } from "@/features/landing/components/HeroImages";
 import { HeroBackground } from "@/features/landing/components/HeroBackground";
@@ -13,6 +14,7 @@ import { Footer } from "@/features/landing/components/Footer";
 export default function Home() {
   return (
     <>
+      <ScrollTracker />
       <div id="home" className="h-screen min-h-[700px] p-[10px]">
         <div className="relative h-full min-h-[680px] bg-soma-black rounded-[30px] overflow-hidden flex flex-col">
           <HeroBackground />
@@ -33,18 +35,22 @@ export default function Home() {
             </p>
 
             <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">
-              <Link
+              <TrackedCTA
                 href="#contact-sales"
+                section="hero"
+                buttonName="Contact Sales"
                 className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
               >
                 Contact Sales
-              </Link>
-              <Link
+              </TrackedCTA>
+              <TrackedCTA
                 href="#product"
+                section="hero"
+                buttonName="Explore SOMA"
                 className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white bg-soma-blue rounded-full hover:bg-soma-blue/90 transition-colors"
               >
                 Explore SOMA
-              </Link>
+              </TrackedCTA>
             </div>
           </main>
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Add, Minus } from "iconsax-react";
+import { trackFAQToggle } from "@/lib/analytics";
 
 const leftFaqs = [
   {
@@ -53,7 +54,10 @@ function FaqItem({
   return (
     <div className="border-b border-soma-black/10">
       <button
-        onClick={onToggle}
+        onClick={() => {
+          onToggle();
+          trackFAQToggle(question, isOpen ? "close" : "open");
+        }}
         className="w-full flex items-center justify-between py-7 md:py-8 text-left gap-4"
       >
         <span className="text-[15px] md:text-[16px] font-semibold text-soma-black">

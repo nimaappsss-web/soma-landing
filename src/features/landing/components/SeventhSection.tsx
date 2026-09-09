@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { TrackedCTA } from "@/components/TrackedCTA";
 import last from "../../../../public/last.webp";
 
 export function SeventhSection() {
@@ -18,18 +18,22 @@ export function SeventhSection() {
             connected experience.
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
-            <Link
+            <TrackedCTA
               href="#contact-sales"
+              section="cta-bottom"
+              buttonName="Contact Sales"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-colors"
             >
               Contact Sales
-            </Link>
-            <Link
+            </TrackedCTA>
+            <TrackedCTA
               href="#product"
+              section="cta-bottom"
+              buttonName="Explore SOMA"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
             >
               Explore SOMA
-            </Link>
+            </TrackedCTA>
           </div>
         </div>
 

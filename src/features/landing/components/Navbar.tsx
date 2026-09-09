@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { trackCTAClick, trackNavLink } from "@/lib/analytics";
 import somaWhite from "../../../../public/somaWhite.svg";
 
 const navItems = [
@@ -26,6 +27,7 @@ export function Navbar() {
             <a
               key={item.label}
               href={item.href}
+              onClick={() => trackNavLink(item.label)}
               className={`text-[16px] font-medium transition-colors ${
                 item.label === "Home" ? "text-white" : "text-[#9098AC] hover:text-white"
               }`}
@@ -37,11 +39,12 @@ export function Navbar() {
 
         {/* Desktop right */}
         <div className="hidden lg:flex items-center gap-6">
-          <a href="https://checksoma.com/login" className="text-sm font-semibold text-white hover:text-white/80 transition-colors">
+          <a href="https://checksoma.com/login" onClick={() => trackCTAClick("Login", "navbar")} className="text-sm font-semibold text-white hover:text-white/80 transition-colors">
             Login
           </a>
           <a
             href="https://checksoma.com/onboarding"
+            onClick={() => trackCTAClick("Get Started", "navbar")}
             className="px-6 py-3 text-sm font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
           >
             Get Started
@@ -67,7 +70,10 @@ export function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                trackNavLink(item.label);
+                setOpen(false);
+              }}
               className={`text-[16px] font-medium ${
                 item.label === "Home" ? "text-white" : "text-[#9098AC]"
               }`}
@@ -76,11 +82,15 @@ export function Navbar() {
             </a>
           ))}
           <hr className="border-white/10" />
-          <a href="https://checksoma.com/login" className="text-sm font-semibold text-white">
+          <a href="https://checksoma.com/login" onClick={() => trackCTAClick("Login", "navbar-mobile")} className="text-sm font-semibold text-white">
             Login
           </a>
           <a
             href="https://checksoma.com/onboarding"
+            onClick={() => {
+              trackCTAClick("Get Started", "navbar-mobile");
+              setOpen(false);
+            }}
             className="px-6 py-3 text-sm font-medium text-soma-black bg-white rounded-full text-center"
           >
             Get Started

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Caveat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { AnimatedFavicon } from "@/components/AnimatedFavicon";
 
@@ -77,6 +78,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6Y9CV04WZZ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6Y9CV04WZZ', { send_page_view: true });
+          `}
+        </Script>
+      </head>
       <body className="min-h-full flex flex-col font-sans">
         <AnimatedFavicon />
         {children}
