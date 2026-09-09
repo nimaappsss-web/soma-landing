@@ -31,8 +31,7 @@ export default function Home() {
             <p className="max-w-[520px] mx-auto text-center text-white/60 text-[15px] md:text-[18px] mt-8 md:mt-10 leading-[1.7] bg-soma-black md:bg-transparent rounded-[16px] px-4 py-3 md:p-0 relative z-10">
               Attendance, results, fees, and announcements — everything your
               school needs, working offline and online. Install as an app on any
-              phone or laptop, sync across devices, no paper, no email threads.
-              Free for schools under 50 students.
+              phone or laptop, sync across devices. Free for schools under 50 students.
             </p>
 
             <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">

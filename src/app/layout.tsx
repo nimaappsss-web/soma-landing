@@ -27,8 +27,44 @@ export const metadata: Metadata = {
     template: "%s | Soma",
   },
   description:
-    "SOMA is a free offline-first school management app for principals, teachers, and parents. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
+    "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
   keywords: [
+    "soma",
+    "check soma",
+    "soma app",
+    "soma school management",
+    "soma.edu",
+    "checksoma",
+    "edu tech Nigeria",
+    "edu tech in Nigeria",
+    "education in Nigeria",
+    "Nigeria school management app",
+    "Nigeria education technology",
+    "Nigerian school software",
+    "edu tech Lagos",
+    "edu tech in Lagos",
+    "school management app Lagos",
+    "education technology Lagos",
+    "school software Lagos",
+    "school management app Nigeria",
+    "school software Nigeria",
+    "edu tech Africa",
+    "education technology Africa",
+    "school management app Africa",
+    "offline school app Nigeria",
+    "school attendance app Nigeria",
+    "school results app Nigeria",
+    "school fees app Nigeria",
+    "school management app global",
+    "school management app worldwide",
+    "school management app overseas",
+    "education technology global",
+    "edu tech global",
+    "school software worldwide",
+    "international school management app",
+    "school management app for developing countries",
+    "offline school software global",
+    "free school management app",
     "school management app",
     "free school management software",
     "offline school management app",
@@ -44,8 +80,6 @@ export const metadata: Metadata = {
     "school operating system",
     "offline education app",
     "school PWA app",
-    "school management system Nigeria",
-    "school software Africa",
     "free attendance tracking app",
     "school report card software",
     "school timetable app",
@@ -75,9 +109,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Soma",
-    title: "Soma — Free Offline School Management App | Attendance, Results & Fees",
+    title: "Soma (Check Soma) — Free Offline School Management App | Attendance, Results & Fees",
     description:
-      "SOMA is a free offline-first school management app for principals, teachers, and parents. Track attendance, manage results, collect fees — all without internet. Install on any phone, syncs across devices.",
+      "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees — all without internet. Install on any phone, syncs across devices.",
     images: [
       {
         url: "/somaBg.png",
@@ -89,9 +123,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soma — Free Offline School Management App",
+    title: "Soma (Check Soma) — Free Offline School Management App",
     description:
-      "SOMA is a free offline-first school management app. Track attendance, manage results, collect fees — all without internet. Install on any phone, syncs across devices.",
+      "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees — all without internet.",
     images: ["/somaBg.png"],
   },
   icons: {
@@ -121,10 +155,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Soma",
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "soma.edu"],
     applicationCategory: "EducationalApplication",
     operatingSystem: "Web, Android, iOS",
     description:
-      "Free offline-first school management app for principals, teachers, and parents. Track attendance, manage results, collect fees, and send announcements — all without internet.",
+      "Free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet.",
     url: siteUrl,
     offers: {
       "@type": "Offer",
@@ -156,10 +191,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Soma",
+    alternateName: ["Check Soma", "CheckSoma"],
     url: siteUrl,
     logo: `${siteUrl}/favicon.svg`,
     description:
-      "Soma builds offline-first school management software for schools in Africa and beyond.",
+      "Soma builds offline-first school management software for schools around the world.",
     sameAs: [
       "https://instagram.com/checksomaapp",
       "https://x.com/checksomaapp",
@@ -222,6 +258,24 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     ],
   };
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Soma",
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "soma.edu"],
+    url: siteUrl,
+    description:
+      "Free offline-first school management app for schools worldwide.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${siteUrl}/?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <html
       lang="en"
@@ -251,6 +305,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col font-sans">
