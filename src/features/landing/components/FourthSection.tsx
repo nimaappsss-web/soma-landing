@@ -22,57 +22,57 @@ import exp4 from "../../../../public/exp4.webp";
 const tabs = [
   {
     id: "onboarding",
-    label: "Easy Onboarding",
-    title: "Set up your school without the usual headache.",
+    label: "Easy Setup",
+    title: "Set up your school in minutes, not days.",
     description:
-      "SOMA helps you bring your school's structure, people and existing information into one place with guided setup that gets your team ready without any complexity.",
+      "A guided setup wizard walks you through every step — from creating classes to inviting teachers. Import existing student records without starting from scratch.",
     bullets: [
-      "Guided setup and clear documentation helps your team configure SOMA with confidence",
-      "Move your existing student and school information into SOMA without rebuilding everything from scratch.",
-      "The simple interface makes it easy for administrators and staff to understand the system and get moving.",
+      "Guided setup wizard with a progress checklist your team can follow step by step",
+      "Import existing student and staff data without rebuilding everything from scratch",
+      "Simple interface that teachers and administrators can use on day one, no training required",
     ],
     image: exp1,
     floatingCards: [
       {
         Icon: UserAdd,
         title: "Invite Teachers",
-        description: "Onboard teachers and staff",
+        description: "Share a link or send by email",
         iconBg: "bg-soma-blue/10",
         iconColor: "#1D4ED8",
       },
       {
         Icon: AddSquare,
         title: "Create Classes",
-        description: "Define class levels and specific arms",
+        description: "Define class levels and arms",
         iconBg: "bg-yellow-100",
         iconColor: "#EAB308",
       },
     ],
   },
   {
-    id: "friendly",
-    label: "User-Friendly",
-    title: "Designed for everyone, not just tech people.",
+    id: "offline",
+    label: "Works Offline",
+    title: "Every feature works without internet.",
     description:
-      "SOMA's clean interface means your staff can start using it on day one without lengthy training sessions or technical background.",
+      "SOMA saves everything on your device and syncs when you reconnect. Install it on any phone or laptop — attendance, results, fees, lesson notes all work offline and sync across every device you sign in on.",
     bullets: [
-      "Intuitive navigation that feels familiar from the first click",
-      "Minimal learning curve so staff can focus on their actual work",
-      "Built for real school workflows, not generic business templates",
+      "Attendance is saved as you go and synced to the school, even offline",
+      "Install as a mobile app on any phone — works from your home screen like a native app",
+      "Multi-device sync: changes on your phone show up on your laptop and vice versa, automatically",
     ],
     image: exp2,
     floatingCards: [
       {
         Icon: People,
-        title: "Parent Portal",
-        description: "Keep guardians in the loop",
+        title: "Multi-Device Sync",
+        description: "Changes show up everywhere",
         iconBg: "bg-soma-green/10",
         iconColor: "#23A64E",
       },
       {
         Icon: Chart,
-        title: "Live Dashboard",
-        description: "See what matters at a glance",
+        title: "Mobile Friendly",
+        description: "Install on any phone",
         iconBg: "bg-soma-blue/10",
         iconColor: "#1D4ED8",
       },
@@ -80,28 +80,28 @@ const tabs = [
   },
   {
     id: "workflow",
-    label: "Optimized Workflow",
-    title: "Less time on tasks, more time for students.",
+    label: "Daily Workflow",
+    title: "Less admin, more teaching.",
     description:
-      "SOMA streamlines your daily operations so your team spends less time on repetitive admin work and more on what matters.",
+      "SOMA handles the repetitive work — attendance marking, fee reminders, result compilation — so your team can focus on students instead of paperwork.",
     bullets: [
-      "Automate routine tasks like attendance tracking and fee reminders",
-      "Centralized communication between staff, students and parents",
-      "Quick access to records without digging through filing cabinets",
+      "Swipe to mark attendance, bulk-mark present, then correct the few exceptions",
+      "Record CA and exam scores per subject, they roll up into report cards automatically",
+      "Generate per-student invoices and send fee reminders to parents in one tap",
     ],
     image: exp3,
     floatingCards: [
       {
         Icon: TimerStart,
         title: "Auto Reminders",
-        description: "Never miss a deadline again",
+        description: "Fee due dates and alerts",
         iconBg: "bg-soma-red/10",
         iconColor: "#CD432F",
       },
       {
         Icon: Document,
-        title: "Digital Records",
-        description: "All files in one secure place",
+        title: "Report Cards",
+        description: "Generate and print results",
         iconBg: "bg-soma-green/10",
         iconColor: "#23A64E",
       },
@@ -109,28 +109,28 @@ const tabs = [
   },
   {
     id: "reporting",
-    label: "Precise Reporting",
-    title: "Real insights, not just raw data.",
+    label: "Reports & Finance",
+    title: "See everything. Decide with confidence.",
     description:
-      "Generate accurate reports and analytics that help you make informed decisions about your school's performance.",
+      "From attendance coverage to fee collection, SOMA gives administrators a clear picture of what's happening across the school — without digging through files.",
     bullets: [
-      "Detailed academic reports with continuous assessment tracking",
-      "Financial summaries and fee collection reports in one click",
-      "Attendance analytics across classes and time periods",
+      "See daily attendance coverage per class and a list of absentees at a glance",
+      "Track expected, collected, and outstanding fees across all classes",
+      "Review teacher submissions before results reach parents with the approval workflow",
     ],
     image: exp4,
     floatingCards: [
       {
         Icon: Chart,
-        title: "Performance Charts",
-        description: "Track student progress over time",
+        title: "Attendance Reports",
+        description: "Coverage across all classes",
         iconBg: "bg-soma-blue/10",
         iconColor: "#1D4ED8",
       },
       {
         Icon: DollarCircle,
-        title: "Fee Reports",
-        description: "Complete financial overview",
+        title: "Fee Tracking",
+        description: "Expected, collected, outstanding",
         iconBg: "bg-soma-green/10",
         iconColor: "#23A64E",
       },
@@ -175,8 +175,8 @@ export function FourthSection() {
         </div>
         <div className="md:pt-14">
           <p className="text-[14px] md:text-[16px] lg:text-[18px] text-gray-4 leading-[1.7] max-w-[400px]">
-            Everything your school needs to manage academics, tuition, staff,
-            students and parents in one application.
+            Everything your school needs — attendance, results, fees, and
+            communication — working offline and online in one app.
           </p>
         </div>
       </div>

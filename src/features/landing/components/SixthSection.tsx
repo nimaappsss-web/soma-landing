@@ -8,35 +8,35 @@ const leftFaqs = [
   {
     question: "What is SOMA?",
     answer:
-      "SOMA is a simple, offline-first school operating system that brings your school's people, information and everyday work together in one place.",
+      "SOMA is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect.",
   },
   {
-    question: "Can SOMA fit our school structure?",
+    question: "Does SOMA really work offline?",
     answer:
-      "Yes. SOMA is built to adapt to your school's unique structure — whether you run a single campus or multiple branches, with any class or arm configuration.",
+      "Yes. Every feature works without internet — attendance, results, fees, lesson notes, and announcements. Data saves locally on your device and syncs automatically in the background when you reconnect. No data is ever lost.",
   },
   {
     question: "Can we bring our existing student data?",
     answer:
-      "Absolutely. SOMA supports importing your existing student and school records so you don't have to start from scratch.",
+      "Absolutely. SOMA supports importing your existing student, staff, and school records so you don't have to start from scratch. You can add students individually or in bulk.",
   },
 ];
 
 const rightFaqs = [
   {
-    question: "What does setup look like for administrators?",
-    answer:
-      "Setup is guided and straightforward. Your team can configure SOMA step by step with clear documentation and support along the way.",
-  },
-  {
     question: "How much does SOMA cost?",
     answer:
-      'The specific pricing details are provided in the <a href="/" class="text-soma-blue underline">Pricing Page</a>. You can also reach out directly to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for information on pricing and migrating from your current software.',
+      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term — no upfront cost, no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details.',
   },
   {
-    question: "Is SOMA available offline?",
+    question: "How long does setup take?",
     answer:
-      "Yes. SOMA is designed as an offline-first application, so your team can continue working even without a stable internet connection.",
+      "Setup is guided and straightforward. The setup wizard walks you through creating classes, inviting teachers, adding students, and configuring your school terms. Most schools are up and running in a single session.",
+  },
+  {
+    question: "Who is SOMA for?",
+    answer:
+      "SOMA is built for school principals and administrators, teachers, and parents. Principals get a full overview of attendance, results, and fees. Teachers mark attendance and record scores. Parents follow their child's progress and get notified about attendance.",
   },
 ];
 
@@ -97,19 +97,19 @@ export function SixthSection() {
       {/* Header */}
       <div className="mb-12 md:mb-16">
         <p className="text-[12px] md:text-[13px] font-semibold text-soma-black tracking-widest uppercase mb-5">
-          Let&apos;s answer some questions
+          Frequently asked questions
         </p>
         <h2 className="text-[66px] font-semibold leading-[1.05] tracking-tight text-soma-black mb-5">
-          Before you bring{" "}
+          Everything you need{" "}
           <br className="hidden sm:block" />
-          your school{" "}
+          before you{" "}
           <span className="font-hand font-bold text-soma-blue italic">
-            online.
+            get started.
           </span>
         </h2>
         <p className="text-[18px] text-gray-4 leading-[1.7] max-w-[428px]">
-          The last thing you need is another complicated rollout. SOMA is
-          designed to start with the way your school already works.
+          The last thing you need is another complicated rollout. SOMA starts
+          with the way your school already works — and grows with you.
         </p>
       </div>
 

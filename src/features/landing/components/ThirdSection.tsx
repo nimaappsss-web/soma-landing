@@ -79,9 +79,9 @@ export function ThirdSection() {
           {/* Left card - taller */}
           <HoverCard
             className="flex-[1.5] rounded-[30px]"
-            icon={<Teacher variant="Bold" size={28} className="mb-5" />}
-            title="Know every student, clearly."
-            description="Keep student and guardian information organized in one secure place, with the right people getting access to the information they need."
+            icon={<Teacher variant="Bold" size={28} color="currentColor" className="mb-5" />}
+            title="Students, teachers, and parents — connected."
+            description="Add students in bulk, invite teachers with a link, and let parents follow their child's attendance, results, and fees. Everyone sees what they need."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">
@@ -101,9 +101,9 @@ export function ThirdSection() {
           {/* Right card - shorter */}
           <HoverCard
             className="flex-1 rounded-[30px]"
-            icon={<People variant="Bold" size={28} className="mb-5" />}
-            title="Keep staff in the loop."
-            description="Connect teachers, admins, and staff with seamless communication tools that keep everyone on the same page."
+            icon={<People variant="Bold" size={28} color="currentColor" className="mb-5" />}
+            title="Staff management that works."
+            description="Invite teachers and non-teaching staff by email or link. Bursars get access to finance. Everyone gets the right tools for their role."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">
@@ -125,9 +125,9 @@ export function ThirdSection() {
           {/* Left bottom card */}
           <HoverCard
             className="flex-1 rounded-[30px]"
-            icon={<Clipboard variant="Bold" size={28} className="mb-5" />}
-            title="Make attendance easier to manage."
-            description="Track attendance consistently, spot gaps early and give your team a clearer picture of what's happening across classes."
+            icon={<Clipboard variant="Bold" size={28} color="currentColor" className="mb-5" />}
+            title="Attendance that works offline."
+            description="Swipe and tap to mark students present or absent. Saved as you go and synced to the school, even if you go offline. Parents are notified instantly."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">
@@ -147,9 +147,9 @@ export function ThirdSection() {
           {/* Right bottom card */}
           <HoverCard
             className="flex-1 rounded-[30px]"
-            icon={<PresentionChart variant="Bold" size={28} className="mb-5" />}
-            title="Put everyone on the same page."
-            description="Share updates, results, and notices with staff and parents so nothing gets lost in translation."
+            icon={<PresentionChart variant="Bold" size={28} color="currentColor" className="mb-5" />}
+            title="Announcements, exams, and fees."
+            description="Share updates with staff and parents. Manage CA and exam scores. Build fee structures, generate invoices, and track payments — all in one place."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">

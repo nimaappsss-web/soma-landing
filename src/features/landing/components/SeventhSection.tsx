@@ -9,13 +9,13 @@ export function SeventhSection() {
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[66px] font-semibold leading-[1.05] tracking-tight text-white mb-5">
-            Make the system around{" "}
+            Your school deserves{" "}
             <br className="hidden sm:block" />
-            your school better.
+            better than paper.
           </h2>
           <p className="text-[14px] md:text-[16px] lg:text-[18px] text-white/60 leading-[1.7] max-w-[420px] mx-auto mb-8 md:mb-10">
-            See how SOMA can bring your school&apos;s everyday work into one
-            connected experience.
+            Start for free. Bring your students, teachers, and parents into one
+            place — working offline and online, no paper, no email threads.
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
             <TrackedCTA
