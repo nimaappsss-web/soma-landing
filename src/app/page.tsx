@@ -44,7 +44,7 @@ export default function Home() {
                 Contact Sales
               </TrackedCTA>
               <TrackedCTA
-                href="#product"
+                href="https://app.checksoma.com"
                 section="hero"
                 buttonName="Explore SOMA"
                 className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white bg-soma-blue rounded-full hover:bg-soma-blue/90 transition-colors"

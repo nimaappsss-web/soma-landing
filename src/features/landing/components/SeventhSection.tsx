@@ -27,7 +27,7 @@ export function SeventhSection() {
               Contact Sales
             </TrackedCTA>
             <TrackedCTA
-              href="#product"
+              href="https://app.checksoma.com"
               section="cta-bottom"
               buttonName="Explore SOMA"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
