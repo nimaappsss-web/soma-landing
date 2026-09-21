@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <ScrollTracker />
-      <div id="home" className="h-screen min-h-[700px] p-[10px]">
+      <div id="home" className="h-screen h-screen-adaptive min-h-[700px] p-[10px]">
         <div className="relative h-full min-h-[680px] bg-soma-black rounded-[30px] overflow-hidden flex flex-col">
           <HeroBackground />
           <Navbar />
