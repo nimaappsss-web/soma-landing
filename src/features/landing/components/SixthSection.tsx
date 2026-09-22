@@ -8,7 +8,7 @@ const leftFaqs = [
   {
     question: "What is SOMA?",
     answer:
-      "SOMA is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect.",
+      'SOMA is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect. See all <a href="/features" class="text-soma-blue underline">school management app features</a>.',
   },
   {
     question: "Does SOMA really work offline?",
@@ -18,7 +18,7 @@ const leftFaqs = [
   {
     question: "Can we bring our existing student data?",
     answer:
-      "Absolutely. SOMA supports importing your existing student, staff, and school records so you don't have to start from scratch. You can add students individually or in bulk.",
+      'Absolutely. SOMA supports importing your existing student, staff, and school records so you don\'t have to start from scratch. You can add students individually or in bulk. Get the step-by-step in our <a href="/guides" class="text-soma-blue underline">school management guides</a>.',
   },
 ];
 
@@ -26,7 +26,7 @@ const rightFaqs = [
   {
     question: "How much does SOMA cost?",
     answer:
-      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term — no upfront cost, no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details.',
+      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term — no upfront cost, no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details, or compare plans on the <a href="/pricing" class="text-soma-blue underline">pricing page</a>.',
   },
   {
     question: "How long does setup take?",
