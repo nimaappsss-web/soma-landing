@@ -33,6 +33,10 @@ export default function Home() {
               school needs, working offline and online. Install as an app on any
               phone or laptop, sync across devices. Free for schools under 50 students.
             </p>
+            <p className="mt-4 text-[12px] md:text-[13px] text-white/40 text-center">
+              SOMA — also known as Check Soma (checksoma.com) — is a free edu tech app
+              built for Nigerian schools and schools worldwide.
+            </p>
 
             <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">
               <TrackedCTA

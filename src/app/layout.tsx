@@ -24,13 +24,16 @@ const siteUrl = "https://checksoma.com";
 export const metadata: Metadata = {
   title: {
     default:
-      "Soma — Nigeria's #1 EduTech & School Management App | Offline Attendance, Results & Fees",
+      "Soma (Check Soma) — Nigeria's #1 EduTech & School Management App | Offline Attendance, Results & Fees",
     template: "%s | Soma",
   },
   description:
     "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app serving schools across Nigeria and the world. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
   keywords: [
     "Soma",
+    "Check Soma",
+    "checksoma",
+    "checksoma.com",
     "Soma school management app",
     "school management app Nigeria",
     "free school management app",
@@ -111,7 +114,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Soma",
-    alternateName: ["Check Soma", "SOMA", "CheckSoma", "Soma EduTech"],
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "checksoma", "Soma EduTech"],
     applicationCategory: "EducationalApplication",
     operatingSystem: "Web, Android, iOS",
     description:
@@ -218,7 +221,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Soma",
-    alternateName: ["Check Soma", "SOMA", "CheckSoma", "Soma EduTech"],
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "checksoma", "Soma EduTech"],
     url: siteUrl,
     description:
       "Nigeria's leading edu tech platform — free, offline-first school management app for schools across Nigeria and the world.",

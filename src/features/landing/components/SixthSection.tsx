@@ -8,7 +8,7 @@ const leftFaqs = [
   {
     question: "What is SOMA?",
     answer:
-      'SOMA is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect. See all <a href="/features" class="text-soma-blue underline">school management app features</a>.',
+      'SOMA (also known as Check Soma, at checksoma.com) is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect. See all <a href="/features" class="text-soma-blue underline">school management app features</a>.',
   },
   {
     question: "Does SOMA really work offline?",

@@ -38,7 +38,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
         {/* Copyright */}
         <p className="text-[13px] text-[#9098AC]">
-          &copy; 2026 Soma. All Rights Reserved.
+          &copy; 2026 Soma (Check Soma). All Rights Reserved. · checksoma.com
         </p>
 
         {/* Links */}
