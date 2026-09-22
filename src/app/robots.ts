@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://soma.edu/sitemap.xml",
+    sitemap: "https://checksoma.com/sitemap.xml",
   };
 }

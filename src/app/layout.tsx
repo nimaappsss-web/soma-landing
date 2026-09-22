@@ -19,21 +19,34 @@ const caveat = Caveat({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://soma.edu";
+const siteUrl = "https://checksoma.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "Soma — Free School Management App | Offline Attendance, Results & Fees",
+    default:
+      "Soma — Nigeria's #1 EduTech & School Management App | Offline Attendance, Results & Fees",
     template: "%s | Soma",
   },
   description:
-    "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
+    "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app serving schools across Nigeria and the world. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
   keywords: [
     "soma",
     "check soma",
     "soma app",
     "soma school management",
-    "soma.edu",
+    "edutech Nigeria",
+    "edtech Nigeria",
+    "Nigeria edu tech",
+    "Nigeria edtech app",
+    "best edutech app in Nigeria",
+    "top edutech company Nigeria",
+    "leading school management app Nigeria",
+    "edutech for Nigerian schools",
+    "school app for Nigerian schools",
+    "Soma Nigeria",
+    "edutech Africa",
+    "best school management app Africa",
+    "worldwide school management app",
     "checksoma",
     "edu tech Nigeria",
     "edu tech in Nigeria",
@@ -109,23 +122,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Soma",
-    title: "Soma (Check Soma) — Free Offline School Management App | Attendance, Results & Fees",
+    title:
+      "Soma (Check Soma) — Nigeria's #1 EduTech Platform | Free Offline School Management App",
     description:
-      "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees — all without internet. Install on any phone, syncs across devices.",
+      "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app for schools in Nigeria and worldwide. Attendance, results, fees & announcements that work without internet. Install on any device, sync everywhere.",
     images: [
       {
         url: "/somaBg.png",
         width: 1200,
         height: 630,
-        alt: "Soma — Free offline-first school management app for attendance, results, and fees",
+        alt: "Soma — Nigeria's leading edu tech app for free, offline-first school management: attendance, results, and fees",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soma (Check Soma) — Free Offline School Management App",
+    title: "Soma (Check Soma) — #1 EduTech School Management App in Nigeria",
     description:
-      "SOMA (Check Soma) is a free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees — all without internet.",
+      "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app for schools across Nigeria and the world. Attendance, results, fees & announcements without internet.",
     images: ["/somaBg.png"],
   },
   icons: {
@@ -155,11 +169,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Soma",
-    alternateName: ["Check Soma", "SOMA", "CheckSoma", "soma.edu"],
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "Soma EduTech"],
     applicationCategory: "EducationalApplication",
     operatingSystem: "Web, Android, iOS",
     description:
-      "Free offline-first school management app for schools worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet.",
+      "Nigeria's leading edu tech platform — a free offline-first school management app for schools across Nigeria and worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet.",
     url: siteUrl,
     offers: {
       "@type": "Offer",
@@ -195,7 +209,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     url: siteUrl,
     logo: `${siteUrl}/favicon.svg`,
     description:
-      "Soma builds offline-first school management software for schools around the world.",
+      "Soma is a Nigerian edu tech company building offline-first school management software for schools across Nigeria and the world — attendance, results, fees, and communication in one app.",
     sameAs: [
       "https://instagram.com/checksomaapp",
       "https://x.com/checksomaapp",
@@ -262,10 +276,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Soma",
-    alternateName: ["Check Soma", "SOMA", "CheckSoma", "soma.edu"],
+    alternateName: ["Check Soma", "SOMA", "CheckSoma", "Soma EduTech"],
     url: siteUrl,
     description:
-      "Free offline-first school management app for schools worldwide.",
+      "Nigeria's leading edu tech platform — free, offline-first school management app for schools across Nigeria and the world.",
     potentialAction: {
       "@type": "SearchAction",
       target: {
