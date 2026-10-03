@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Caveat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { AnimatedFavicon } from "@/components/AnimatedFavicon";
+import { siteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,12 +20,9 @@ const caveat = Caveat({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://checksoma.com";
-
 export const metadata: Metadata = {
   title: {
-    default:
-      "Soma (Check Soma) | #1 EduTech & School Management App in Nigeria",
+    default: "Check Soma | Free Offline School Management App Nigeria",
     template: "%s | Soma",
   },
   description:
@@ -64,11 +62,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_NG",
     url: siteUrl,
     siteName: "Soma",
-    title:
-      "Soma (Check Soma) | Nigeria's #1 EduTech Platform",
+    title: "Check Soma | Free Offline School Management App Nigeria",
     description:
       "A free, offline-first school management app for Nigerian schools. Take attendance, record results and collect fees with or without internet. Install it on any device.",
     images: [
@@ -82,7 +79,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soma (Check Soma) | #1 School Management App in Nigeria",
+    title: "Check Soma | Free Offline School Management App Nigeria",
     description:
       "A free, offline-first school management app. Attendance, results and fees that work when the internet does not.",
     images: ["/somaBg.png"],
@@ -161,61 +158,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     ],
   };
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is SOMA?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "SOMA is a free offline-first school management app. Attendance, results, fees and announcements all live in one place. It works with or without internet, saving on your device and syncing when you reconnect.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does SOMA work offline?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. SOMA is offline-first, so every feature runs without internet, including attendance, results, fees and announcements. Data saves on the device and syncs automatically once you reconnect.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does SOMA cost?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "SOMA is free for schools with 50 students or fewer. Larger schools pay a per-student fee per term. There is no upfront cost and no long-term contract.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can we import existing student data into SOMA?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. SOMA supports importing your existing student and school records so you don't have to start from scratch.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can SOMA fit our school structure?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "SOMA fits the structure your school already has, whether that is a single campus or several branches, with any class and arm setup.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who is SOMA for?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "SOMA is built for principals, administrators, teachers and parents. Each role opens on its own dashboard: teachers mark attendance and record scores, parents follow their child's progress, and administrators see the whole school at a glance.",
-        },
-      },
-    ],
-  };
-
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -228,7 +170,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
   return (
     <html
-      lang="en"
+      lang="en-NG"
       className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} h-full antialiased`}
     >
       <head>
@@ -251,10 +193,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
         <script
           type="application/ld+json"

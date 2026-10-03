@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal strategy notes (do not commit)
+BACKLINK_STRATEGY.md
