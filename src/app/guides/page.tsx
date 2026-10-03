@@ -5,7 +5,7 @@ import { MarketingPage } from "@/features/landing/components/MarketingPage";
 const siteUrl = "https://checksoma.com";
 
 export const metadata: Metadata = {
-  title: "Guides — School Management in Nigeria | SOMA Knowledge Base",
+  title: "Guides | School Management in Nigeria | SOMA Knowledge Base",
   description:
     "Practical guides for Nigerian schools: moving from paper to apps, digitising attendance and results, managing fees offline, and more. Written for principals, administrators and teachers.",
   keywords: [
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `${siteUrl}/guides`,
     siteName: "Soma",
-    title: "SOMA Guides — School Management for Nigerian Schools",
+    title: "SOMA Guides | School Management for Nigerian Schools",
     description:
       "Practical guides for moving Nigerian schools from paper to an offline-first app: attendance, results, fees and more.",
     images: [{ url: "/somaBg.png", width: 1200, height: 630, alt: "SOMA guides for school management in Nigeria" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SOMA Guides — School Management for Nigerian Schools",
+    title: "SOMA Guides | School Management for Nigerian Schools",
     description: "Practical guides for moving Nigerian schools from paper to an offline-first app.",
     images: ["/somaBg.png"],
   },
@@ -44,14 +44,14 @@ const posts = [
     href: "/guides/offline-school-management-app-nigeria",
     title: "Offline School Management App in Nigeria: How SOMA Works Without Internet",
     excerpt:
-      "Why reliable internet is still a challenge for many Nigerian schools — and how an offline-first app keeps attendance, results and fees running no matter what.",
+      "Why reliable internet is still a challenge for many Nigerian schools, and how an offline-first app keeps attendance, results and fees running anyway.",
     date: "2026-09-22",
   },
   {
     href: "/guides/digital-attendance-and-results",
     title: "How to Digitise School Attendance and Results: From Paper and Excel to One App",
     excerpt:
-      "A step-by-step plan for moving records from paper registers and Excel sheets into a school management app — without losing your work or training your staff for weeks.",
+      "A step-by-step plan for moving records from paper registers and Excel sheets into a school management app, without losing your work or training your staff for weeks.",
     date: "2026-09-22",
   },
 ];
@@ -84,7 +84,7 @@ export default function GuidesPage() {
           <span className="font-hand font-bold italic text-soma-blue">made simpler.</span>
         </h1>
         <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
-          Practical, no-fluff guides for principals, administrators and teachers — covering
+          Practical, no-fluff guides for principals, administrators and teachers, covering
           everything from going offline-first to digitising results and fees.
         </p>
       </div>

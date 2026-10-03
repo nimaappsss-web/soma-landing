@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           </h2>
           <p>
             SOMA (&quot;Check Soma&quot;) collects the information schools and teachers provide
-            when setting up and using the app — school details, student records, staff records,
+            when setting up and using the app: school details, student records, staff records,
             attendance data, results, fee records and contact details. We also collect limited
             technical data (such as device and usage information) to keep the app working and
             to improve it.

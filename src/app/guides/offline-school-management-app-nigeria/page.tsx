@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Soma",
     title: "Offline School Management App in Nigeria: How SOMA Works Without Internet",
     description:
-      "Why Nigeria's internet reality makes offline-first school software the smart choice — and how SOMA keeps attendance, results and fees running without internet.",
+      "Why Nigeria's internet reality makes offline-first school software the smart choice, and how SOMA keeps attendance, results and fees running without internet.",
     images: [{ url: "/somaBg.png", width: 1200, height: 630, alt: "Offline school management app Nigeria" }],
   },
   twitter: {
@@ -82,7 +82,7 @@ export default function OfflineNigeriaGuide() {
         <h1 className="text-[30px] sm:text-[40px] md:text-[48px] font-semibold leading-[1.1] tracking-tight text-soma-black mt-6">
           Offline School Management App in Nigeria: How SOMA Works Without Internet
         </h1>
-        <p className="text-[14px] text-gray-4 mt-4">September 22, 2026 · 5 min read</p>
+        <p className="text-[14px] text-gray-4 mt-4">September 22, 2026 | 5 min read</p>
 
         <div className="mt-10 text-gray-4 leading-[1.8] space-y-6 text-[16px] md:text-[17px]">
           <p>
@@ -92,7 +92,7 @@ export default function OfflineNigeriaGuide() {
           </p>
           <p>
             Most school management apps overlook this. They assume a school has fast, unlimited
-            broadband — which is why so many deployments fail after the first month. An{" "}
+            broadband, which is why so many deployments fail after the first month. An{" "}
             <strong>offline school management app</strong> is designed for the reality Nigerian
             schools actually live in.
           </p>
@@ -102,8 +102,8 @@ export default function OfflineNigeriaGuide() {
           </h2>
           <p>
             An offline-first app saves everything to the device itself. When you mark attendance,
-            record a score or add a fee payment, it is written to the phone or laptop immediately
-            — not to a cloud server that may be unreachable. It only syncs when a connection
+            record a score or add a fee payment, it is written to the phone or laptop immediately,
+            not to a cloud server that may be unreachable. It only syncs when a connection
             becomes available.
           </p>
           <ul className="list-disc pl-6 space-y-2">
@@ -119,8 +119,8 @@ export default function OfflineNigeriaGuide() {
           <p>
             Schools in Nigeria juggle multiple realities: large class sizes, limited admin staff,
             and network conditions that change room by room. A cloud-only app fails when these
-            realities collide. An offline-first school management app keeps working at the point
-            where the work actually happens — in the classroom.
+            realities collide. An offline-first school management app keeps working in the classroom,
+            where the work actually happens.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-semibold text-soma-black mt-10">
@@ -132,7 +132,7 @@ export default function OfflineNigeriaGuide() {
             and syncs across every device your team signs in on.
           </p>
           <p>
-            It&apos;s free for schools with 50 students or fewer — a practical starting point for
+            It&apos;s free for schools with 50 students or fewer, a practical starting point for
             most Nigerian schools. See{" "}
             <Link href="/features" className="text-soma-blue hover:underline font-medium">
               all features

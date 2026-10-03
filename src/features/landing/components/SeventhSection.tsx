@@ -15,7 +15,7 @@ export function SeventhSection() {
           </h2>
           <p className="text-[14px] md:text-[16px] lg:text-[18px] text-white/60 leading-[1.7] max-w-[420px] mx-auto mb-8 md:mb-10">
             Start for free. Bring your students, teachers, and parents into one
-            place — working offline and online, no paper, no email threads.
+            place, working offline and online. No paper, no email threads.
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
             <TrackedCTA

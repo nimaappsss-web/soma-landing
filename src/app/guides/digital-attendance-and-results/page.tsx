@@ -7,7 +7,7 @@ const siteUrl = "https://checksoma.com";
 export const metadata: Metadata = {
   title: "How to Digitise School Attendance and Results: From Paper and Excel to One App",
   description:
-    "Move your school from paper registers and Excel sheets to a digital school management app. A step-by-step plan for attendance, results, report cards and fees — with bulk student import.",
+    "Move your school from paper registers and Excel sheets to a digital school management app. A step-by-step plan for attendance, results, report cards and fees, with bulk student import.",
   keywords: [
     "digitise school records Nigeria",
     "school attendance app Nigeria",
@@ -83,7 +83,7 @@ export default function DigitiseGuide() {
         <h1 className="text-[30px] sm:text-[40px] md:text-[48px] font-semibold leading-[1.1] tracking-tight text-soma-black mt-6">
           How to Digitise School Attendance and Results: From Paper and Excel to One App
         </h1>
-        <p className="text-[14px] text-gray-4 mt-4">September 22, 2026 · 5 min read</p>
+        <p className="text-[14px] text-gray-4 mt-4">September 22, 2026 | 5 min read</p>
 
         <div className="mt-10 text-gray-4 leading-[1.8] space-y-6 text-[16px] md:text-[17px]">
           <p>
@@ -94,7 +94,7 @@ export default function DigitiseGuide() {
           <p>
             The good news is that digitising does not require a two-month IT project or training
             your staff for weeks. With the right school management app, most schools make the
-            switch within a single term — and the transition can be gentle.
+            switch within a single term, and the transition can be gentle.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-semibold text-soma-black mt-10">
@@ -102,7 +102,7 @@ export default function DigitiseGuide() {
           </h2>
           <p>
             Before touching attendance or results, bring over your student register. A good app
-            lets you <strong>import in bulk</strong> — names, classes, arms and guardian details —
+            lets you <strong>import in bulk</strong>, names, classes, arms and guardian details,
             so you don&apos;t start from a blank page. SOMA supports bulk import from spreadsheets,
             which removes the most tedious part of the switch.
           </p>
@@ -113,7 +113,7 @@ export default function DigitiseGuide() {
           <p>
             Begin with one class or one arm. Teachers mark attendance with a swipe or tap, and
             bulk-mark the class present before correcting the few exceptions. Attendance is saved
-            instantly and works offline — no internet required in the classroom.
+            instantly and works offline, so the classroom does not need internet.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-semibold text-soma-black mt-10">
@@ -121,8 +121,8 @@ export default function DigitiseGuide() {
           </h2>
           <p>
             Record continuous assessment and exam scores per subject. Because the app already knows
-            your classes and subjects, scores roll up into report cards automatically. The
-            endless Excel copying — and the errors that come with it — disappear.
+            your classes and subjects, scores roll up into report cards automatically. The endless Excel copying disappears, and so do the errors that
+            came with it.
           </p>
 
           <h2 className="text-[22px] md:text-[26px] font-semibold text-soma-black mt-10">

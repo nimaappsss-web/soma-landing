@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import { trackTabClick } from "@/lib/analytics";
+import Image from "next/image";
 
 import {
   TickCircle,
@@ -25,7 +25,7 @@ const tabs = [
     label: "Easy Setup",
     title: "Set up your school in minutes, not days.",
     description:
-      "A guided setup wizard walks you through every step — from creating classes to inviting teachers. Import existing student records without starting from scratch.",
+      "A guided setup wizard walks you through every step, from creating classes to inviting teachers. Import existing student records without starting from scratch.",
     bullets: [
       "Guided setup wizard with a progress checklist your team can follow step by step",
       "Import existing student and staff data without rebuilding everything from scratch",
@@ -54,10 +54,10 @@ const tabs = [
     label: "Works Offline",
     title: "Every feature works without internet.",
     description:
-      "SOMA saves everything on your device and syncs when you reconnect. Install it on any phone or laptop — attendance, results, fees, lesson notes all work offline and sync across every device you sign in on.",
+      "SOMA saves everything on your device and syncs when you reconnect. Install it on any phone or laptop. Attendance, results, fees and lesson notes all work offline and sync across every device you sign in on.",
     bullets: [
       "Attendance is saved as you go and synced to the school, even offline",
-      "Install as a mobile app on any phone — works from your home screen like a native app",
+      "Install as a mobile app on any phone. Works from your home screen like a native app",
       "Multi-device sync: changes on your phone show up on your laptop and vice versa, automatically",
     ],
     image: exp2,
@@ -83,7 +83,7 @@ const tabs = [
     label: "Daily Workflow",
     title: "Less admin, more teaching.",
     description:
-      "SOMA handles the repetitive work — attendance marking, fee reminders, result compilation — so your team can focus on students instead of paperwork.",
+      "SOMA handles the repetitive work, attendance marking, fee reminders and result compilation, so your team can focus on students instead of paperwork.",
     bullets: [
       "Swipe to mark attendance, bulk-mark present, then correct the few exceptions",
       "Record CA and exam scores per subject, they roll up into report cards automatically",
@@ -112,7 +112,7 @@ const tabs = [
     label: "Reports & Finance",
     title: "See everything. Decide with confidence.",
     description:
-      "From attendance coverage to fee collection, SOMA gives administrators a clear picture of what's happening across the school — without digging through files.",
+      "From attendance coverage to fee collection, SOMA gives administrators a clear picture of what's happening across the school, without digging through files.",
     bullets: [
       "See daily attendance coverage per class and a list of absentees at a glance",
       "Track expected, collected, and outstanding fees across all classes",
@@ -175,8 +175,8 @@ export function FourthSection() {
         </div>
         <div className="md:pt-14">
           <p className="text-[14px] md:text-[16px] lg:text-[18px] text-gray-4 leading-[1.7] max-w-[400px]">
-            Everything your school needs — attendance, results, fees, and
-            communication — working offline and online in one app.
+            Everything your school needs, attendance, results, fees and communication,
+            working offline and online in one app.
           </p>
         </div>
       </div>

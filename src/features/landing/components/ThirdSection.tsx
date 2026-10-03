@@ -31,7 +31,7 @@ function HoverCard({
         hovering ? "bg-black" : "bg-soma-white-card"
       } ${className ?? ""}`}
     >
-      {/* Circular reveal from top-left origin — behind images */}
+      {/* Circular reveal from top-left origin, behind images */}
       <div
         className="pointer-events-none absolute inset-0 rounded-[30px]"
         style={{
@@ -80,7 +80,7 @@ export function ThirdSection() {
           <HoverCard
             className="flex-[1.5] rounded-[30px]"
             icon={<Teacher variant="Bold" size={28} color="currentColor" className="mb-5" />}
-            title="Students, teachers, and parents — connected."
+            title="Everyone in your school, connected."
             description="Add students in bulk, invite teachers with a link, and let parents follow their child's attendance, results, and fees. Everyone sees what they need."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
@@ -149,7 +149,7 @@ export function ThirdSection() {
             className="flex-1 rounded-[30px]"
             icon={<PresentionChart variant="Bold" size={28} color="currentColor" className="mb-5" />}
             title="Announcements, exams, and fees."
-            description="Share updates with staff and parents. Manage CA and exam scores. Build fee structures, generate invoices, and track payments — all in one place."
+            description="Share updates with staff and parents. Manage CA and exam scores. Build fee structures, generate invoices, and track payments, all in one place."
           >
             <div className="pl-4 md:pl-10 mt-auto pt-10 relative z-10">
               <div className="bg-soma-bg rounded-tl-[30px] overflow-hidden pl-4.5 pt-4">

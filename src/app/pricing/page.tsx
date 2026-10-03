@@ -5,7 +5,7 @@ import { MarketingPage } from "@/features/landing/components/MarketingPage";
 const siteUrl = "https://checksoma.com";
 
 export const metadata: Metadata = {
-  title: "Pricing — Free School Management App for Small Schools | SOMA",
+  title: "Pricing | Free School Management App for Small Schools | SOMA",
   description:
     "SOMA's school management app pricing: free for schools with 50 students or fewer, and a simple per-student per-term fee for larger schools. No upfront cost, no long-term contract. Built for Nigerian schools and beyond.",
   keywords: [
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `${siteUrl}/pricing`,
     siteName: "Soma",
-    title: "SOMA Pricing — Free for Schools Under 50 Students",
+    title: "SOMA Pricing | Free for Schools Under 50 Students",
     description:
       "Free for schools with 50 students or fewer. A simple per-student per-term fee for larger schools. No upfront cost, no long-term contract.",
     images: [{ url: "/somaBg.png", width: 1200, height: 630, alt: "SOMA school management app pricing" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SOMA Pricing — Free School Management App",
+    title: "SOMA Pricing | Free School Management App",
     description: "Free for schools under 50 students. Simple per-student per-term pricing beyond that.",
     images: ["/somaBg.png"],
   },
@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Is SOMA really free for small schools?",
     answer:
-      "Yes. SOMA is completely free for schools with 50 students or fewer — every feature, no time limit. Larger schools pay a simple per-student fee per term.",
+      "Yes. SOMA is completely free for schools with 50 students or fewer. Every feature is included, no time limit. Larger schools pay a simple per-student fee per term.",
   },
   {
     question: "How much does SOMA cost for larger schools?",
@@ -54,7 +54,7 @@ const faqs = [
   {
     question: "What is included in the free plan?",
     answer:
-      "Everything. Offline attendance, results and report cards, fees and invoices, announcements, timetables, lesson notes, the parent portal and multi-device sync — all included at no cost.",
+      "Everything. Offline attendance, results and report cards, fees and invoices, announcements, timetables, lesson notes, the parent portal and multi-device sync, all included at no cost.",
   },
   {
     question: "Are there hidden charges?",
@@ -91,7 +91,7 @@ const productJsonLd = {
         name: "Per-student per term",
         price: "0",
         priceCurrency: "USD",
-        description: "Simple per-student per-term fee for larger schools — contact sales",
+        description: "Simple per-student per-term fee for larger schools, contact sales for a quote",
       },
     ],
   },
@@ -140,8 +140,8 @@ export default function PricingPage() {
           <span className="font-hand font-bold italic text-soma-blue">Grow when you&apos;re ready.</span>
         </h1>
         <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px] mx-auto">
-          No upfront cost. No long-term contract. Every feature included — whether your
-          school has 20 students or 2,000.
+          No upfront cost. No long-term contract. Every feature included, whether your school has
+          20 students or 2,000.
         </p>
       </div>
 
@@ -156,7 +156,7 @@ export default function PricingPage() {
           </p>
           <ul className="space-y-3 text-[15px] text-white/85 mt-auto">
             {[
-              "Offline-first — works without internet",
+              "Works offline, no internet needed",
               "Unlimited attendance, results & fees",
               "Parent portal included",
               "Multi-device sync",
@@ -177,8 +177,8 @@ export default function PricingPage() {
             Simple<span className="text-lg font-normal text-gray-4">, affordable</span>
           </p>
           <p className="mt-4 text-gray-4 text-[15px] leading-relaxed mb-6">
-            For schools above 50 students. A fair, per-student fee each term — no minimums,
-            no hidden charges.
+            For schools above 50 students. A fair, per-student fee each term, with no minimums
+            and no hidden charges.
           </p>
           <ul className="space-y-3 text-[15px] text-soma-black mt-auto">
             {[

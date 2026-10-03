@@ -14,7 +14,7 @@ const cards = [
     labelColor: "text-soma-black",
     title: "Run",
     description:
-      "See students, attendance, and what is happening right now across the school. Check from your phone or laptop — everything syncs in real time.",
+      "See students, attendance, and what is happening right now across the school. Check it from your phone or laptop. Everything syncs in real time.",
   },
   {
     image: made2,
@@ -23,7 +23,7 @@ const cards = [
     labelColor: "text-soma-black",
     title: "Teach",
     description:
-      "Mark attendance with a swipe on your phone. Record CA and exam scores. Write lesson notes — all saved offline, synced across every device you sign in on.",
+      "Mark attendance with a swipe on your phone. Record CA and exam scores. Write lesson notes, all saved offline and synced across every device you sign in on.",
   },
   {
     image: made3,
@@ -41,7 +41,7 @@ const cards = [
     labelColor: "text-white",
     title: "Grow",
     description:
-      "Experience a school where the systems around learning feel joined up — from attendance to results to reports.",
+      "Experience a school where the systems around learning feel joined up, from attendance to results to reports.",
   },
 ];
 
@@ -70,8 +70,8 @@ export function FifthSection() {
           </h2>
           <p className="text-[14px] md:text-[16px] lg:text-[18px] text-white/60 leading-[1.7] max-w-[500px] mx-auto mb-8 md:mb-10">
             Principals, teachers, parents, and students each get a dedicated
-            dashboard with the features they need — while every underlying
-            information stays connected.
+            dashboard with the features they need, while every underlying record stays
+            connected.
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
             <TrackedCTA

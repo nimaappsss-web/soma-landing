@@ -24,11 +24,11 @@ const siteUrl = "https://checksoma.com";
 export const metadata: Metadata = {
   title: {
     default:
-      "Soma (Check Soma) — Nigeria's #1 EduTech & School Management App | Offline Attendance, Results & Fees",
+      "Soma (Check Soma) | #1 EduTech & School Management App in Nigeria",
     template: "%s | Soma",
   },
   description:
-    "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app serving schools across Nigeria and the world. Track attendance, manage results, collect fees, and send announcements — all without internet. Install on any phone or laptop, syncs across devices. Free for schools under 50 students.",
+    "SOMA is a free school management app built for Nigerian schools. Take attendance, record results and collect fees with or without internet, then sync across every device your team signs in on. Free for schools with 50 students or fewer.",
   keywords: [
     "Soma",
     "Check Soma",
@@ -68,23 +68,23 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Soma",
     title:
-      "Soma (Check Soma) — Nigeria's #1 EduTech Platform | Free Offline School Management App",
+      "Soma (Check Soma) | Nigeria's #1 EduTech Platform",
     description:
-      "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app for schools in Nigeria and worldwide. Attendance, results, fees & announcements that work without internet. Install on any device, sync everywhere.",
+      "A free, offline-first school management app for Nigerian schools. Take attendance, record results and collect fees with or without internet. Install it on any device.",
     images: [
       {
         url: "/somaBg.png",
         width: 1200,
         height: 630,
-        alt: "Soma — Nigeria's leading edu tech app for free, offline-first school management: attendance, results, and fees",
+        alt: "Soma app screens showing attendance, results and fees",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soma (Check Soma) — #1 EduTech School Management App in Nigeria",
+    title: "Soma (Check Soma) | #1 School Management App in Nigeria",
     description:
-      "SOMA is Nigeria's leading edu tech platform — a free, offline-first school management app for schools across Nigeria and the world. Attendance, results, fees & announcements without internet.",
+      "A free, offline-first school management app. Attendance, results and fees that work when the internet does not.",
     images: ["/somaBg.png"],
   },
   icons: {
@@ -118,7 +118,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     applicationCategory: "EducationalApplication",
     operatingSystem: "Web, Android, iOS",
     description:
-      "Nigeria's leading edu tech platform — a free offline-first school management app for schools across Nigeria and worldwide. Track attendance, manage results, collect fees, and send announcements — all without internet.",
+      "A free school management app for Nigerian schools. Records attendance, results and fees, and keeps working when the internet goes down.",
     url: siteUrl,
     offers: {
       "@type": "Offer",
@@ -127,15 +127,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       description: "Free for schools with 50 students or fewer",
     },
     featureList: [
-      "Offline attendance tracking",
-      "Student results and report cards",
-      "School fee collection and invoices",
-      "Staff and parent communication",
-      "Timetable management",
-      "Student and teacher records",
-      "Multi-device sync across phone and laptop",
-      "Mobile-friendly PWA install",
-      "Works offline and online",
+      "Attendance register that works without internet",
+      "Continuous assessment, exam scores and report cards",
+      "Fee structures, invoices and payment records",
+      "Announcements for staff and parents",
+      "Timetables and lesson notes",
+      "Bulk import of student and staff records",
+      "Sync across phone and laptop",
+      "Installable as a mobile app",
     ],
     screenshot: `${siteUrl}/somaBg.png`,
     softwareVersion: "1.0",
@@ -154,7 +153,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     url: siteUrl,
     logo: `${siteUrl}/favicon.svg`,
     description:
-      "Soma is a Nigerian edu tech company building offline-first school management software for schools across Nigeria and the world — attendance, results, fees, and communication in one app.",
+      "Soma builds offline-first school management software for schools in Nigeria and beyond, covering attendance, results, fees and announcements in one app.",
     sameAs: [
       "https://instagram.com/checksomaapp",
       "https://x.com/checksomaapp",
@@ -171,7 +170,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         name: "What is SOMA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "SOMA is a free offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect.",
+          text: "SOMA is a free offline-first school management app. Attendance, results, fees and announcements all live in one place. It works with or without internet, saving on your device and syncing when you reconnect.",
         },
       },
       {
@@ -179,7 +178,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         name: "Does SOMA work offline?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. SOMA is built as an offline-first application. Every feature — attendance, results, fees, announcements — works without internet. Data saves locally and syncs automatically when you reconnect.",
+          text: "Yes. SOMA is offline-first, so every feature runs without internet, including attendance, results, fees and announcements. Data saves on the device and syncs automatically once you reconnect.",
         },
       },
       {
@@ -203,7 +202,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         name: "Can SOMA fit our school structure?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. SOMA adapts to your school's unique structure — whether you run a single campus or multiple branches, with any class or arm configuration.",
+          text: "SOMA fits the structure your school already has, whether that is a single campus or several branches, with any class and arm setup.",
         },
       },
       {
@@ -211,7 +210,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         name: "Who is SOMA for?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "SOMA is built for school principals and administrators, teachers, and parents. Each role gets a dedicated dashboard with the features they need — attendance for teachers, results and fees for parents, and a full overview for administrators.",
+          text: "SOMA is built for principals, administrators, teachers and parents. Each role opens on its own dashboard: teachers mark attendance and record scores, parents follow their child's progress, and administrators see the whole school at a glance.",
         },
       },
     ],
@@ -224,7 +223,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     alternateName: ["Check Soma", "SOMA", "CheckSoma", "checksoma", "Soma EduTech"],
     url: siteUrl,
     description:
-      "Nigeria's leading edu tech platform — free, offline-first school management app for schools across Nigeria and the world.",
+      "Nigeria's leading edu tech platform, a free offline-first school management app for schools across Nigeria and the world.",
   };
 
   return (

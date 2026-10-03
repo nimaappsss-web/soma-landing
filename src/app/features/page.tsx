@@ -5,9 +5,9 @@ import { MarketingPage } from "@/features/landing/components/MarketingPage";
 const siteUrl = "https://checksoma.com";
 
 export const metadata: Metadata = {
-  title: "School Management App Features — Attendance, Results, Fees & More",
+  title: "School Management App Features | Attendance, Results, Fees & More",
   description:
-    "Explore SOMA's school management app features for Nigerian schools: offline attendance, results & report cards, fee collection, announcements, timetables, lesson notes and a parent portal — all in one free offline-first app.",
+    "Explore SOMA's school management app features for Nigerian schools: offline attendance, results & report cards, fee collection, announcements, timetables, lesson notes and a parent portal, all in one free offline-first app.",
   keywords: [
     "school management app features",
     "offline school management app Nigeria",
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `${siteUrl}/features`,
     siteName: "Soma",
-    title: "SOMA Features — The Offline-First School Management App for Nigeria",
+    title: "SOMA Features | The Offline-First School Management App for Nigeria",
     description:
       "Offline attendance, results, fees, announcements, timetables and a parent portal in one free app built for the way Nigerian schools actually work.",
     images: [{ url: "/somaBg.png", width: 1200, height: 630, alt: "SOMA school management app features" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SOMA Features — Offline-First School Management App",
+    title: "SOMA Features | Offline-First School Management App",
     description:
       "Offline attendance, results, fees, announcements, timetables and a parent portal in one free app.",
     images: ["/somaBg.png"],
@@ -46,7 +46,7 @@ const features = [
   {
     title: "Offline-first that actually works",
     description:
-      "Every feature runs without internet. Attendance, results, fees and announcements save on the device and sync automatically when you reconnect — nothing is ever lost, even in areas with poor network.",
+      "Every feature runs without internet. Attendance, results, fees and announcements save on the device and sync automatically when you reconnect, so nothing is ever lost, even in areas with poor network.",
   },
   {
     title: "Attendance, marked in seconds",
@@ -76,7 +76,7 @@ const features = [
   {
     title: "Multi-device sync",
     description:
-      "Install on any phone or laptop. Changes on one device show up on every other device your team signs in on — automatically, online or offline.",
+      "Install on any phone or laptop. Changes on one device show up on every other device your team signs in on, online or offline.",
   },
   {
     title: "Simple setup, no training required",
@@ -127,7 +127,7 @@ export default function FeaturesPage() {
         <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
           SOMA is a free school management app built for Nigerian schools and schools
           worldwide. Attendance, results, fees, announcements, timetables and lesson
-          notes — all working offline, all synced across every device your team signs in on.
+          notes, all working offline and synced across every device your team signs in on.
         </p>
       </div>
 
@@ -146,7 +146,7 @@ export default function FeaturesPage() {
 
       <div className="mt-16 bg-soma-black rounded-[24px] p-8 md:p-12 text-center text-white">
         <h2 className="text-[26px] md:text-[34px] font-semibold leading-tight">
-          Start using it today — free for schools under 50 students.
+          Start using it today. Free for schools under 50 students.
         </h2>
         <p className="text-white/70 mt-4 max-w-[560px] mx-auto text-[15px] md:text-[16px]">
           See the full product in action on{" "}

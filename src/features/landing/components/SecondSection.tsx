@@ -21,8 +21,8 @@ export function SecondSection() {
           </p>
           <p className="text-[16px] md:text-[18px] font-normal leading-[1.7] text-gray-4">
             It&apos;s a simple, offline-first school operating system that brings
-            attendance, results, fees, and announcements into one place — and
-            keeps working even when the internet doesn&apos;t. Install it on any
+            attendance, results, fees, and announcements into one place, and keeps
+            working even when the internet doesn&apos;t. Install it on any
             phone or laptop, and everything syncs across every device your team
             signs in on.
           </p>

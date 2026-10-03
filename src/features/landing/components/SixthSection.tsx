@@ -8,12 +8,12 @@ const leftFaqs = [
   {
     question: "What is SOMA?",
     answer:
-      'SOMA (also known as Check Soma, at checksoma.com) is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works online and offline — everything saves on your device and syncs when you reconnect. See all <a href="/features" class="text-soma-blue underline">school management app features</a>.',
+      'SOMA (also known as Check Soma, at checksoma.com) is a free, offline-first school management app that brings attendance, results, fees, and announcements into one place. It works with or without internet. Everything saves on your device and syncs when you reconnect. See all <a href="/features" class="text-soma-blue underline">school management app features</a>.',
   },
   {
     question: "Does SOMA really work offline?",
     answer:
-      "Yes. Every feature works without internet — attendance, results, fees, lesson notes, and announcements. Data saves locally on your device and syncs automatically in the background when you reconnect. No data is ever lost.",
+      "Yes. Every feature works without internet, including attendance, results, fees and lesson notes. Data saves locally on your device and syncs automatically in the background when you reconnect. No data is ever lost.",
   },
   {
     question: "Can we bring our existing student data?",
@@ -26,7 +26,7 @@ const rightFaqs = [
   {
     question: "How much does SOMA cost?",
     answer:
-      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term — no upfront cost, no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details, or compare plans on the <a href="/pricing" class="text-soma-blue underline">pricing page</a>.',
+      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term, with no upfront cost and no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details, or compare plans on the <a href="/pricing" class="text-soma-blue underline">pricing page</a>.',
   },
   {
     question: "How long does setup take?",
@@ -109,7 +109,7 @@ export function SixthSection() {
         </h2>
         <p className="text-[18px] text-gray-4 leading-[1.7] max-w-[428px]">
           The last thing you need is another complicated rollout. SOMA starts
-          with the way your school already works — and grows with you.
+          with the way your school already works, and grows with you.
         </p>
       </div>
 
