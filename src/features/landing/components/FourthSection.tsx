@@ -14,6 +14,7 @@ import {
   Document,
   DollarCircle,
 } from "iconsax-react";
+import { MoveRight } from "lucide-react";
 import exp1 from "../../../../public/exp1.webp";
 import exp2 from "../../../../public/exp2.webp";
 import exp3 from "../../../../public/exp3.webp";
@@ -140,26 +141,47 @@ const tabs = [
 
 export function FourthSection() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
-  const activeContent = tabs.find((t) => t.id === activeTab) ?? tabs[0];
+  const activeIndex = Math.max(
+    0,
+    tabs.findIndex((t) => t.id === activeTab)
+  );
+  const activeContent = tabs[activeIndex];
+  const nextContent = tabs[(activeIndex + 1) % tabs.length];
+  const prevContent = tabs[(activeIndex - 1 + tabs.length) % tabs.length];
   const tabRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   const trackRef = useRef<HTMLDivElement>(null);
+  const touchX = useRef<number | null>(null);
+  const didSwipe = useRef(false);
   const [indicator, setIndicator] = useState({ left: 0, width: 0 });
 
+  const goTo = (tab: { id: string; label: string }) => {
+    setActiveTab(tab.id);
+    trackTabClick(tab.label);
+  };
+
   useEffect(() => {
-    const btn = tabRefs.current.get(activeTab);
-    const track = trackRef.current;
-    if (btn && track) {
-      const trackRect = track.getBoundingClientRect();
-      const btnRect = btn.getBoundingClientRect();
-      setIndicator({
-        left: btnRect.left - trackRect.left,
-        width: btnRect.width,
-      });
-    }
+    const measure = () => {
+      const btn = tabRefs.current.get(activeTab);
+      const track = trackRef.current;
+      if (btn && track) {
+        const trackRect = track.getBoundingClientRect();
+        const btnRect = btn.getBoundingClientRect();
+        setIndicator({
+          left: btnRect.left - trackRect.left,
+          width: btnRect.width,
+        });
+      }
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
   }, [activeTab]);
 
   return (
-    <section id="product" className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px] overflow-hidden">
+    <section
+      id="product"
+      className="w-full max-w-[1294px] mx-auto mt-[72px] mb-[86px] px-[18px] md:px-[62px]"
+    >
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-16 mb-8 md:mb-14">
         <div>
@@ -181,15 +203,63 @@ export function FourthSection() {
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="mb-8 md:mb-16">
+      {/* Tabs - mobile stepper (sticky) */}
+      <div className="md:hidden sticky top-[64px] z-30 -mx-[18px] px-[18px] pt-[10px] pb-2 bg-soma-bg/90 backdrop-blur-sm mb-8">
+        <div
+          className="flex items-center justify-between h-[42px] rounded-full bg-soma-black px-3.5"
+          onTouchStart={(e) => {
+            touchX.current = e.touches[0].clientX;
+          }}
+          onTouchEnd={(e) => {
+            if (touchX.current === null) return;
+            const dx = e.changedTouches[0].clientX - touchX.current;
+            touchX.current = null;
+            if (dx > 40 || dx < -40) {
+              didSwipe.current = true;
+              setTimeout(() => {
+                didSwipe.current = false;
+              }, 400);
+              if (dx > 40) goTo(prevContent);
+              else goTo(nextContent);
+            }
+          }}
+        >
+          <div
+            key={`active-${activeTab}`}
+            className="flex items-center gap-1.5 shrink-0 animate-revealActive"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-soma-blue shrink-0" />
+            <span className="text-[11px] font-semibold uppercase tracking-wide text-[#F4ECE1] whitespace-nowrap">
+              {activeContent.label}
+            </span>
+          </div>
+          <button
+            key={`next-${activeTab}`}
+            type="button"
+            onClick={() => {
+              if (didSwipe.current) return;
+              goTo(nextContent);
+            }}
+            aria-label={`Next feature: ${nextContent.label}`}
+            className="flex items-center gap-1.5 min-w-0 ml-2 animate-revealNext"
+          >
+            <span className="text-[11px] font-semibold uppercase tracking-wide text-[#F4ECE1] truncate">
+              {nextContent.label}
+            </span>
+            <MoveRight size={20} color="#F4ECE1" strokeWidth={1.75} className="shrink-0" />
+          </button>
+        </div>
+      </div>
+
+      {/* Tabs - desktop */}
+      <div className="hidden md:block mb-16">
         <div
           ref={trackRef}
-          className="relative flex md:flex-wrap gap-1.5 md:gap-2 bg-white rounded-full p-1.5 w-full md:w-fit overflow-x-auto scrollbar-hide"
+          className="relative flex flex-wrap gap-2 bg-white rounded-full p-1.5 w-fit"
         >
-          {/* Sliding indicator - desktop only */}
+          {/* Sliding indicator */}
           <div
-            className="absolute top-1.5 bottom-1.5 bg-soma-black rounded-full transition-all duration-300 ease-in-out hidden md:block"
+            className="absolute top-1.5 bottom-1.5 bg-soma-black rounded-full transition-all duration-300 ease-in-out"
             style={{ left: indicator.left, width: indicator.width }}
           />
           {tabs.map((tab) => (
@@ -198,14 +268,9 @@ export function FourthSection() {
               ref={(el) => {
                 if (el) tabRefs.current.set(tab.id, el);
               }}
-              onClick={() => {
-                setActiveTab(tab.id);
-                trackTabClick(tab.label);
-              }}
-              className={`relative z-10 px-3 md:px-5 py-2 md:py-2.5 rounded-full text-[12px] md:text-[14px] font-medium transition-colors duration-300 whitespace-nowrap shrink-0 ${
-                activeTab === tab.id
-                  ? "bg-soma-black md:bg-transparent text-white"
-                  : ""
+              onClick={() => goTo(tab)}
+              className={`relative z-10 px-5 py-2.5 rounded-full text-[14px] font-medium transition-colors duration-300 whitespace-nowrap shrink-0 ${
+                activeTab === tab.id ? "bg-soma-black md:bg-transparent text-white" : ""
               }`}
             >
               {tab.label}
