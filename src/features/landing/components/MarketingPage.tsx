@@ -4,7 +4,7 @@ import { Footer } from "@/features/landing/components/Footer";
 
 export function MarketingPage({ children }: { children: ReactNode }) {
   return (
-    <div className="px-[10px]">
+    <div className="min-h-[700px] p-[10px]">
       <div className="relative bg-soma-black rounded-[30px] overflow-hidden">
         <Navbar />
       </div>

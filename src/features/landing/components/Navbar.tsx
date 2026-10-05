@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { trackCTAClick, trackNavLink } from "@/lib/analytics";
 import { MoveRight } from "lucide-react";
@@ -104,17 +105,27 @@ export function Navbar() {
     });
   };
 
+  const goHome = (e: React.MouseEvent) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    if (open) closeMenu();
+  };
+
   return (
     <nav className="relative z-50 w-full">
       {/* Header row (desktop only, acts as spacer on mobile) */}
       <div className="max-w-[1294px] mx-auto flex items-center justify-between px-6 md:px-10 pt-[40px] md:pt-[53px] pb-4 min-h-[84px] lg:min-h-0">
-        <Image
-          src={somaWhite}
-          alt="Soma"
-          width={130}
-          height={28}
-          className="brightness-0 invert hidden lg:block"
-        />
+        <Link href="/" aria-label="Soma home" onClick={goHome} className="hidden lg:block">
+          <Image
+            src={somaWhite}
+            alt="Soma"
+            width={130}
+            height={28}
+            className="brightness-0 invert"
+          />
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8 px-8 h-[53px] rounded-[20px] border border-white/15 bg-white/5 backdrop-blur-sm">
@@ -148,17 +159,15 @@ export function Navbar() {
       </div>
 
       {/* Floating mobile logo */}
-      <a
-        href="#home"
+      <Link
+        href="/"
         aria-label="Soma home"
-        onClick={() => {
-          if (open) closeMenu();
-        }}
+        onClick={goHome}
         className="lg:hidden fixed top-4 left-4 z-[60] flex items-center rounded-xl bg-soma-black px-3 py-2.5 shadow-lg animate-menuLink"
         style={{ animationDelay: "0.1s" }}
       >
         <Image src={somaWhite} alt="Soma" width={118} height={26} className="brightness-0 invert" />
-      </a>
+      </Link>
 
       {/* Floating mobile menu button */}
       <button
