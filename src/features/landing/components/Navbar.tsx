@@ -2,22 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { trackCTAClick, trackNavLink } from "@/lib/analytics";
 import { MoveRight } from "lucide-react";
 import somaWhite from "../../../../public/somaWhite.svg";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Product", href: "#product" },
-  { label: "Why SOMA", href: "#why-soma" },
-  { label: "For schools", href: "#for-schools" },
-  { label: "Contact", href: "#contact-sales" },
+  { label: "Home", hash: "home" },
+  { label: "Product", hash: "product" },
+  { label: "Why SOMA", hash: "why-soma" },
+  { label: "For schools", hash: "for-schools" },
+  { label: "Contact", hash: "contact-sales" },
 ];
 
 const CLOSE_MS = 450;
 
+function scrollToHash(hash: string) {
+  const el = document.getElementById(hash);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  else window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 export function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -94,15 +103,42 @@ export function Navbar() {
     };
   }, [open]);
 
-  const handleNavClick = (e: React.MouseEvent, item: { label: string; href: string }) => {
-    e.preventDefault();
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    let attempts = 0;
+    let raf = 0;
+    const tryScroll = () => {
+      const el = document.getElementById(hash);
+      if (el) {
+        scrollToHash(hash);
+        return;
+      }
+      if (++attempts < 20) raf = requestAnimationFrame(tryScroll);
+    };
+    raf = requestAnimationFrame(tryScroll);
+    return () => cancelAnimationFrame(raf);
+  }, [pathname]);
+
+  const handleNavClick = (
+    e: React.MouseEvent,
+    item: { label: string; hash: string },
+    afterClose?: () => void
+  ) => {
     trackNavLink(item.label);
-    closeMenu(() => {
-      const el = document.getElementById(item.href.slice(1));
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      else window.scrollTo({ top: 0, behavior: "smooth" });
-      window.history.replaceState(null, "", item.href);
-    });
+    const run = () => {
+      e.preventDefault();
+      if (pathname === "/") {
+        window.history.replaceState(null, "", `/#${item.hash}`);
+        scrollToHash(item.hash);
+      } else {
+        router.push(`/#${item.hash}`);
+      }
+      afterClose?.();
+    };
+    if (open) closeMenu(run);
+    else run();
   };
 
   const goHome = (e: React.MouseEvent) => {
@@ -132,8 +168,8 @@ export function Navbar() {
           {navItems.map((item) => (
             <a
               key={item.label}
-              href={item.href}
-              onClick={() => trackNavLink(item.label)}
+              href={`/#${item.hash}`}
+              onClick={(e) => handleNavClick(e, item)}
               className={`text-[16px] font-medium transition-colors ${
                 item.label === "Home" ? "text-white" : "text-[#9098AC] hover:text-white"
               }`}
@@ -197,7 +233,7 @@ export function Navbar() {
             {navItems.map((item, i) => (
               <a
                 key={item.label}
-                href={item.href}
+                href={`/#${item.hash}`}
                 onClick={(e) => handleNavClick(e, item)}
                 className={`group flex items-center gap-4 rounded-2xl py-2.5 transition-colors ${
                   closing ? "animate-menuLinkOut" : "animate-menuLink"
