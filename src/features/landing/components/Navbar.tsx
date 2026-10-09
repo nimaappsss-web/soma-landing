@@ -179,7 +179,7 @@ export function Navbar() {
             Login
           </a>
           <a
-            href="https://app.checksoma.com"
+            href="https://app.checksoma.com/onboarding"
             onClick={() => trackCTAClick("Get Started", "navbar")}
             className="px-6 py-3 text-sm font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"
           >
@@ -269,7 +269,7 @@ export function Navbar() {
               Login
             </a>
             <a
-              href="https://app.checksoma.com"
+              href="https://app.checksoma.com/onboarding"
               onClick={() => trackCTAClick("Get Started", "navbar-mobile")}
               className="rounded-full bg-white py-3.5 text-center text-[15px] font-semibold text-soma-black transition-colors active:bg-white/80"
             >
