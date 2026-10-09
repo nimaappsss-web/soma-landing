@@ -9,11 +9,9 @@ import { MoveRight } from "lucide-react";
 import somaWhite from "../../../../public/somaWhite.svg";
 
 const navItems = [
-  { label: "Home", hash: "home" },
-  { label: "Product", hash: "product" },
-  { label: "Why SOMA", hash: "why-soma" },
-  { label: "For schools", hash: "for-schools" },
-  { label: "Contact", hash: "contact-sales" },
+  { label: "Features", href: "/features" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Guides", href: "/guides" },
 ];
 
 const CLOSE_MS = 450;
@@ -121,24 +119,19 @@ export function Navbar() {
     return () => cancelAnimationFrame(raf);
   }, [pathname]);
 
-  const handleNavClick = (
-    e: React.MouseEvent,
-    item: { label: string; hash: string },
-    afterClose?: () => void
-  ) => {
+  const handleNavClick = (e: React.MouseEvent, item: { label: string; href: string }) => {
     trackNavLink(item.label);
-    const run = () => {
-      e.preventDefault();
-      if (pathname === "/") {
-        window.history.replaceState(null, "", `/#${item.hash}`);
-        scrollToHash(item.hash);
-      } else {
-        router.push(`/#${item.hash}`);
-      }
-      afterClose?.();
+    const navigate = () => {
+      if (pathname === item.href) window.scrollTo({ top: 0, behavior: "smooth" });
+      else router.push(item.href);
     };
-    if (open) closeMenu(run);
-    else run();
+    if (open) {
+      e.preventDefault();
+      closeMenu(navigate);
+    } else if (pathname === item.href) {
+      e.preventDefault();
+      navigate();
+    }
   };
 
   const goHome = (e: React.MouseEvent) => {
@@ -166,16 +159,17 @@ export function Navbar() {
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8 px-8 h-[53px] rounded-[20px] border border-white/15 bg-white/5 backdrop-blur-sm">
           {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={`/#${item.hash}`}
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={pathname === item.href ? "page" : undefined}
               onClick={(e) => handleNavClick(e, item)}
               className={`text-[16px] font-medium transition-colors ${
-                item.label === "Home" ? "text-white" : "text-[#9098AC] hover:text-white"
+                pathname === item.href ? "text-white" : "text-[#9098AC] hover:text-white"
               }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -231,9 +225,10 @@ export function Navbar() {
           {/* Links */}
           <nav className="flex flex-1 flex-col justify-center px-6 py-4">
             {navItems.map((item, i) => (
-              <a
-                key={item.label}
-                href={`/#${item.hash}`}
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={pathname === item.href ? "page" : undefined}
                 onClick={(e) => handleNavClick(e, item)}
                 className={`group flex items-center gap-4 rounded-2xl py-2.5 transition-colors ${
                   closing ? "animate-menuLinkOut" : "animate-menuLink"
@@ -255,7 +250,7 @@ export function Navbar() {
                   strokeWidth={1.75}
                   className="ml-auto -translate-x-2 text-soma-blue opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
                 />
-              </a>
+              </Link>
             ))}
           </nav>
 

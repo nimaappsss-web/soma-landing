@@ -1,0 +1,9 @@
+export { PricingSections } from "./PricingSections";
+export { PricingHero } from "./PricingHero";
+export { PlanTiers } from "./PlanTiers";
+export { TeachersSection } from "./TeachersSection";
+export { PricingExamples } from "./PricingExamples";
+export { BillingSection } from "./BillingSection";
+export { PricingFaq } from "./PricingFaq";
+export { PricingCta } from "./PricingCta";
+export { ReceiptCalculator } from "./ReceiptCalculator";
