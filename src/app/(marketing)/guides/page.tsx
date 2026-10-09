@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MarketingPage } from "@/features/landing/components/MarketingPage";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -69,49 +68,49 @@ const jsonLd = {
 
 export default function GuidesPage() {
   return (
-    <MarketingPage>
+    <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="max-w-[860px] mx-auto">
-        <p className="text-[12px] md:text-[13px] font-semibold text-soma-blue tracking-widest uppercase mb-4">
-          Guides
-        </p>
-        <h1 className="text-[32px] sm:text-[44px] md:text-[56px] font-semibold leading-[1.08] tracking-tight text-soma-black">
-          Running a school in Nigeria,{" "}
-          <span className="font-hand font-bold italic text-soma-blue">made simpler.</span>
-        </h1>
-        <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
-          Practical, no-fluff guides for principals, administrators and teachers, covering
-          everything from going offline-first to digitising results and fees.
-        </p>
+    <p className="text-[12px] md:text-[13px] font-semibold text-soma-blue tracking-widest uppercase mb-4">
+      Guides
+    </p>
+    <h1 className="text-[32px] sm:text-[44px] md:text-[56px] font-semibold leading-[1.08] tracking-tight text-soma-black">
+      Running a school in Nigeria,{" "}
+      <span className="font-hand font-bold italic text-soma-blue">made simpler.</span>
+    </h1>
+    <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
+      Practical, no-fluff guides for principals, administrators and teachers, covering
+      everything from going offline-first to digitising results and fees.
+    </p>
       </div>
 
       <div className="flex flex-col gap-6 mt-14 md:mt-16 max-w-[860px] mx-auto">
-        {posts.map((post) => (
-          <Link
-            key={post.href}
-            href={post.href}
-            className="group bg-soma-white-card rounded-[20px] p-6 md:p-8 hover:bg-black transition-colors duration-300"
-          >
-            <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:justify-between">
-              <h2 className="text-[20px] md:text-[24px] font-semibold text-soma-black group-hover:text-white leading-snug">
-                {post.title}
-              </h2>
-              <time className="text-[13px] text-gray-4 group-hover:text-white/60 shrink-0 md:ml-6">
-                {new Date(post.date).toLocaleDateString("en", { month: "short", day: "numeric", year: "numeric" })}
-              </time>
-            </div>
-            <p className="text-[15px] text-gray-4 group-hover:text-white/70 leading-[1.7] mt-3">
-              {post.excerpt}
-            </p>
-            <span className="inline-block mt-4 text-[14px] font-medium text-soma-blue group-hover:text-white">
-              Read guide →
-            </span>
-          </Link>
-        ))}
+    {posts.map((post) => (
+      <Link
+        key={post.href}
+        href={post.href}
+        className="group bg-soma-white-card rounded-[20px] p-6 md:p-8 hover:bg-black transition-colors duration-300"
+      >
+        <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:justify-between">
+          <h2 className="text-[20px] md:text-[24px] font-semibold text-soma-black group-hover:text-white leading-snug">
+            {post.title}
+          </h2>
+          <time className="text-[13px] text-gray-4 group-hover:text-white/60 shrink-0 md:ml-6">
+            {new Date(post.date).toLocaleDateString("en", { month: "short", day: "numeric", year: "numeric" })}
+          </time>
+        </div>
+        <p className="text-[15px] text-gray-4 group-hover:text-white/70 leading-[1.7] mt-3">
+          {post.excerpt}
+        </p>
+        <span className="inline-block mt-4 text-[14px] font-medium text-soma-blue group-hover:text-white">
+          Read guide →
+        </span>
+      </Link>
+    ))}
       </div>
-    </MarketingPage>
+    </>
   );
 }

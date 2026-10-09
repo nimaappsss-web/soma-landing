@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MarketingPage } from "@/features/landing/components/MarketingPage";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -106,58 +105,58 @@ const breadcrumbs = {
 
 export default function FeaturesPage() {
   return (
-    <MarketingPage>
+    <>
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <div className="max-w-[860px] mx-auto">
-        <p className="text-[12px] md:text-[13px] font-semibold text-soma-blue tracking-widest uppercase mb-4">
-          Features
-        </p>
-        <h1 className="text-[32px] sm:text-[44px] md:text-[56px] font-semibold leading-[1.08] tracking-tight text-soma-black">
-          Everything your school runs on,{" "}
-          <span className="font-hand font-bold italic text-soma-blue">in one offline-first app.</span>
-        </h1>
-        <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
-          SOMA is a free school management app built for Nigerian schools and schools
-          worldwide. Attendance, results, fees, announcements, timetables and lesson
-          notes, all working offline and synced across every device your team signs in on.
-        </p>
+    <p className="text-[12px] md:text-[13px] font-semibold text-soma-blue tracking-widest uppercase mb-4">
+      Features
+    </p>
+    <h1 className="text-[32px] sm:text-[44px] md:text-[56px] font-semibold leading-[1.08] tracking-tight text-soma-black">
+      Everything your school runs on,{" "}
+      <span className="font-hand font-bold italic text-soma-blue">in one offline-first app.</span>
+    </h1>
+    <p className="text-[16px] md:text-[18px] text-gray-4 leading-[1.7] mt-6 max-w-[640px]">
+      SOMA is a free school management app built for Nigerian schools and schools
+      worldwide. Attendance, results, fees, announcements, timetables and lesson
+      notes, all working offline and synced across every device your team signs in on.
+    </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mt-14 md:mt-16">
-        {features.map((feature) => (
-          <div key={feature.title} className="bg-soma-white-card rounded-[22px] p-6 md:p-8">
-            <h2 className="text-[20px] md:text-[22px] font-semibold text-soma-black mb-2">
-              {feature.title}
-            </h2>
-            <p className="text-[15px] md:text-[16px] text-gray-4 leading-[1.7]">
-              {feature.description}
-            </p>
-          </div>
-        ))}
+    {features.map((feature) => (
+      <div key={feature.title} className="bg-soma-white-card rounded-[22px] p-6 md:p-8">
+        <h2 className="text-[20px] md:text-[22px] font-semibold text-soma-black mb-2">
+          {feature.title}
+        </h2>
+        <p className="text-[15px] md:text-[16px] text-gray-4 leading-[1.7]">
+          {feature.description}
+        </p>
+      </div>
+    ))}
       </div>
 
       <div className="mt-16 bg-soma-black rounded-[24px] p-8 md:p-12 text-center text-white">
-        <h2 className="text-[26px] md:text-[34px] font-semibold leading-tight">
-          Start using it today. Free for schools under 50 students.
-        </h2>
-        <p className="text-white/70 mt-4 max-w-[560px] mx-auto text-[15px] md:text-[16px]">
-          See the full product in action on{" "}
-          <Link href="https://app.checksoma.com" className="underline text-soma-blue hover:text-white transition-colors">
-            app.checksoma.com
-          </Link>{" "}
-          or{" "}
-          <Link href="/pricing" className="underline">
-            compare plans
-          </Link>.
-        </p>
+    <h2 className="text-[26px] md:text-[34px] font-semibold leading-tight">
+      Start using it today. Free for schools under 50 students.
+    </h2>
+    <p className="text-white/70 mt-4 max-w-[560px] mx-auto text-[15px] md:text-[16px]">
+      See the full product in action on{" "}
+      <Link href="https://app.checksoma.com" className="underline text-soma-blue hover:text-white transition-colors">
+        app.checksoma.com
+      </Link>{" "}
+      or{" "}
+      <Link href="/pricing" className="underline">
+        compare plans
+      </Link>.
+    </p>
       </div>
-    </MarketingPage>
+    </>
   );
 }

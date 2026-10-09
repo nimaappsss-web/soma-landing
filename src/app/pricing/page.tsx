@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Footer } from "@/features/landing/components/Footer";
 import { PricingSections, pricingFaqs } from "@/features/pricing";
 import { siteUrl } from "@/lib/site";
 
@@ -107,12 +106,7 @@ export default function PricingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
-      <div className="min-h-[700px] p-[10px]">
-        <div className="relative bg-soma-black rounded-[30px] overflow-hidden">
-          <PricingSections />
-        </div>
-      </div>
-      <Footer />
+      <PricingSections />
     </>
   );
 }
