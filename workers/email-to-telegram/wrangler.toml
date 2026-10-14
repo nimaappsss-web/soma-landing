@@ -1,0 +1,7 @@
+name = "email-to-telegram"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Add your verified FORWARD_TO destination here if you want to keep copies
+# [vars]
+# FORWARD_TO = "support@checksoma.com"
