@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight2 } from "iconsax-react";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   },
 };
 
-const features = [
+const features: { title: string; description: string; href?: string }[] = [
   {
     title: "Offline-first that actually works",
     description:
@@ -80,6 +81,12 @@ const features = [
     title: "Simple setup, no training required",
     description:
       "A guided setup wizard walks your team through classes, teachers and student import. Most schools are fully set up within one session, with zero training.",
+  },
+  {
+    title: "Free ID card designer",
+    href: "https://design.checksoma.com",
+    description:
+      "Design printable staff and student ID cards right in the browser — lanyard preview, photo crop and real ID-size print sheets. Free for every school, no account needed.",
   },
 ];
 
@@ -130,16 +137,39 @@ export default function FeaturesPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 mt-14 md:mt-16">
-    {features.map((feature) => (
-      <div key={feature.title} className="bg-soma-white-card rounded-[22px] p-6 md:p-8">
-        <h2 className="text-[20px] md:text-[22px] font-semibold text-soma-black mb-2">
-          {feature.title}
-        </h2>
-        <p className="text-[15px] md:text-[16px] text-gray-4 leading-[1.7]">
-          {feature.description}
-        </p>
-      </div>
-    ))}
+    {features.map((feature) =>
+      feature.href ? (
+        <Link
+          key={feature.title}
+          href={feature.href}
+          className="group block bg-soma-white-card rounded-[22px] p-6 md:p-8 transition-colors duration-300 hover:bg-soma-black"
+        >
+          <div className="flex items-start justify-between gap-3">
+            <h2 className="text-[20px] md:text-[22px] font-semibold text-soma-black transition-colors duration-300 group-hover:text-white">
+              {feature.title}
+            </h2>
+            <ArrowRight2
+              variant="Bold"
+              size={22}
+              color="currentColor"
+              className="mt-1 flex-none text-soma-black transition-all duration-300 group-hover:translate-x-1 group-hover:text-white"
+            />
+          </div>
+          <p className="text-[15px] md:text-[16px] text-gray-4 leading-[1.7] transition-colors duration-300 group-hover:text-white/70">
+            {feature.description}
+          </p>
+        </Link>
+      ) : (
+        <div key={feature.title} className="bg-soma-white-card rounded-[22px] p-6 md:p-8">
+          <h2 className="text-[20px] md:text-[22px] font-semibold text-soma-black mb-2">
+            {feature.title}
+          </h2>
+          <p className="text-[15px] md:text-[16px] text-gray-4 leading-[1.7]">
+            {feature.description}
+          </p>
+        </div>
+      ),
+    )}
       </div>
 
       <div className="mt-16 bg-soma-black rounded-[24px] p-8 md:p-12 text-center text-white">
