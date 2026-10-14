@@ -83,7 +83,7 @@ const features: { title: string; description: string; href?: string }[] = [
       "A guided setup wizard walks your team through classes, teachers and student import. Most schools are fully set up within one session, with zero training.",
   },
   {
-    title: "Free ID card designer",
+    title: "Soma Designs",
     href: "https://design.checksoma.com",
     description:
       "Design printable staff and student ID cards right in the browser — lanyard preview, photo crop and real ID-size print sheets. Free for every school, no account needed.",

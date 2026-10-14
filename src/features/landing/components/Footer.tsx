@@ -7,7 +7,7 @@ const footerLinks = [
   { label: "Features", href: "/features" },
   { label: "Pricing", href: "/pricing" },
   { label: "Guides", href: "/guides" },
-  { label: "ID Card Designer", href: "https://design.checksoma.com" },
+  { label: "Soma Designs", href: "https://design.checksoma.com" },
   { label: "Support", href: "mailto:support@checksoma.com" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms of Service", href: "/terms" },
