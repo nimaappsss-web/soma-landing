@@ -43,7 +43,7 @@ export function PlanTiers() {
               <div className={styles.ratePrice}>
                 {tier.priceAction === "contact-sales" ? (
                   <TrackedCTA
-                    href="https://www.checksoma.com/contact"
+                    href="mailto:support@checksoma.com?subject=Sales%20enquiry"
                     section="pricing-plans"
                     buttonName="Contact sales"
                     className={`${styles.btn} ${styles.btnGhostLight}`}

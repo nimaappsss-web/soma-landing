@@ -40,7 +40,7 @@ export default function Home() {
 
             <div className="flex items-center justify-center gap-3 md:gap-4 mt-12 md:mt-16">
               <TrackedCTA
-                href="#contact-sales"
+                href="mailto:support@checksoma.com?subject=Sales%20enquiry"
                 section="hero"
                 buttonName="Contact Sales"
                 className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-soma-black bg-white rounded-full hover:bg-white/90 transition-colors"

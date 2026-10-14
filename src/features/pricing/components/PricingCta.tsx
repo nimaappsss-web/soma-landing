@@ -21,7 +21,7 @@ export function PricingCta() {
             Start free
           </TrackedCTA>
           <TrackedCTA
-            href="https://www.checksoma.com/contact"
+            href="mailto:support@checksoma.com?subject=Sales%20enquiry"
             section="pricing-cta"
             buttonName="Contact sales"
             className={`${styles.btn} ${styles.btnGhostDark}`}

@@ -19,7 +19,7 @@ export function SeventhSection() {
           </p>
           <div className="flex items-center justify-center gap-3 md:gap-4">
             <TrackedCTA
-              href="#contact-sales"
+              href="mailto:support@checksoma.com?subject=Sales%20enquiry"
               section="cta-bottom"
               buttonName="Contact Sales"
               className="px-6 md:px-8 py-3 md:py-3.5 text-[12px] md:text-[13px] font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-colors"

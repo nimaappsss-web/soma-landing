@@ -26,7 +26,7 @@ const rightFaqs = [
   {
     question: "How much does SOMA cost?",
     answer:
-      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term, with no upfront cost and no long-term contract. Reach out to our <a href="#contact-sales" class="text-soma-blue underline">Sales Team</a> for details, or compare plans on the <a href="/pricing" class="text-soma-blue underline">pricing page</a>.',
+      'SOMA is free for schools with 50 students or fewer. Larger schools pay a simple per-student fee per term, with no upfront cost and no long-term contract. Reach out to our <a href="mailto:support@checksoma.com?subject=Sales%20enquiry" class="text-soma-blue underline">Sales Team</a> for details, or compare plans on the <a href="/pricing" class="text-soma-blue underline">pricing page</a>.',
   },
   {
     question: "How long does setup take?",
