@@ -37,9 +37,9 @@ async function sendTelegram(env: Env, text: string) {
 }
 
 async function sendToBackend(env: Env, payload: Record<string, unknown>) {
-  if (!env.BACKEND_URL || !env.EMAIL_WEBHOOK_SECRET) return;
+  if (!env.BACKEND_URL || !env.EMAIL_WEBHOOK_SECRET) return false;
   try {
-    await fetch(`${env.BACKEND_URL}/api/telegram/inbound-email`, {
+    const res = await fetch(`${env.BACKEND_URL}/api/telegram/inbound-email`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,8 +47,10 @@ async function sendToBackend(env: Env, payload: Record<string, unknown>) {
       },
       body: JSON.stringify(payload),
     });
+    return res.ok;
   } catch (e) {
     console.error("[email-worker] backend forward failed:", e);
+    return false;
   }
 }
 
@@ -80,8 +82,9 @@ export default {
       escapeHtml(trimmed),
     ].join("\n");
 
-    // Try backend first (reuses existing config/chat), else direct Telegram
-    await sendToBackend(env, {
+    // Prefer the backend (reuses existing config/chat); fall back to direct
+    // Telegram if the backend isn't set up or the forward fails.
+    const forwarded = await sendToBackend(env, {
       from: fromAddr,
       fromName,
       subject,
@@ -89,7 +92,7 @@ export default {
       html: parsed.html || undefined,
     });
 
-    if (!env.BACKEND_URL || !env.EMAIL_WEBHOOK_SECRET) {
+    if (!forwarded) {
       try {
         await sendTelegram(env, text);
       } catch (err) {
